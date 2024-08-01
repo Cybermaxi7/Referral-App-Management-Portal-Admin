@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Users - Referral App Management Portal</title>
+
+        <link rel="canonical" href="https://www.firstbanknigeria.com/" />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+        />
+        <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <div class="dashboard">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Logo and Navigation Links -->
+                <div class="logo-container">
+                    <img
+                        src="/dashboard/assets/logo.svg"
+                        alt="first bank logo"
+                    />
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li
+                            onclick="window.location.href='/dashboard'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-1.svg"
+                                    alt="icon-1"
+                                />
+                            </div>
+                            <p>Dashboard</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/prospects'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-2.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Prospects</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/users'"
+                            class="nav-link active"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-3.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Users</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/branch'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-4.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Branch</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/reports'"
+                            class="nav-link"
+                        >
+                            <div class="report-logo">
+                                <img
+                                    src="/dashboard/assets/icon-5.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Reports</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/admin'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-6.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Admin</p>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <!-- Top Navigation Bar -->
+                <div class="top-nav">
+                    <!-- Search bar, user info, etc. -->
+                    <div class="nav-search">
+                        <div class="nav-search-icon-container">
+                            <img
+                                src="/dashboard/assets/search-icon.svg"
+                                alt="search icon"
+                            />
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="What are you looking for?"
+                        />
+                    </div>
+                    <div class="user-info">
+                        <button class="bell-icon-container">
+                            <img
+                                src="/dashboard/assets/bell-icon.svg"
+                                alt="bell icon"
+                            />
+                        </button>
+                        <button class="avatar-container">
+                            <img
+                                src="/dashboard/assets/avatar.svg"
+                                alt="avatar image"
+                            />
+                        </button>
+                        <p class="user-name">TheEndDeen</p>
+                        <button class="arrow-down-container">
+                            <img
+                                src="/dashboard/assets/arrow-down.svg"
+                                alt="arrow down icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content Area (this is the part that changes) -->
+                <div class="content">
+                    <!-- Dynamic content goes here -->
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
