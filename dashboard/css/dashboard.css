@@ -1,0 +1,52 @@
+.welcome-message {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  font-family: "Circular Std";
+  line-height: 31.6208px;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    width: 30rem;
+    height: 15rem;
+    border-radius: 2%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+
+    a {
+      color: white;
+      font-size: 12px;
+    }
+
+    .card-text {
+      display: flex;
+      justify-content: end;
+      font-size: 3.75rem;
+    }
+  }
+
+  .card-one {
+    background-color: #002855;
+  }
+
+  .card-two {
+    background-color: #e6b014;
+  }
+
+  .card-three {
+    background-color: #353535;
+  }
+
+  .card-four {
+    background-color: #00b388;
+  }
+}
