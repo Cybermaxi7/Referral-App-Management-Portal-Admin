@@ -19,8 +19,13 @@
             rel="apple-touch-icon"
             href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
         />
-        <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+        <link
+            href="https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/reports/css/reports.css" />
     </head>
     <body>
         <div class="dashboard">
@@ -107,6 +112,23 @@
                             </div>
                             <p>Admin</p>
                         </li>
+                        <li>
+                            <div
+                                class="nav-search nav-search-sidebar"
+                                style="display: none"
+                            >
+                                <div class="nav-search-icon-container">
+                                    <img
+                                        src="/dashboard/assets/search-icon.svg"
+                                        alt="search icon"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="What are you looking for?"
+                                />
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </aside>
@@ -115,6 +137,11 @@
             <main class="main-content">
                 <!-- Top Navigation Bar -->
                 <div class="top-nav">
+                    <!-- Hamburger Menu  -->
+                    <button class="hamburger-menu">
+                        <img src="/reports/assets/menu.svg" alt="menu icon" />
+                    </button>
+
                     <!-- Search bar, user info, etc. -->
                     <div class="nav-search">
                         <div class="nav-search-icon-container">
@@ -154,8 +181,1534 @@
                 <!-- Content Area (this is the part that changes) -->
                 <div class="content">
                     <!-- Dynamic content goes here -->
+                    <div class="reports-container">
+                        <h2>Reports</h2>
+                        <button
+                            class="create-report-btn"
+                            id="openCreateReportModalBtn"
+                        >
+                            <img
+                                src="/reports/assets/plus.svg"
+                                alt="plus icon"
+                            />
+                            Create Report
+                        </button>
+                        <div
+                            class="filter-container filter-container-sales"
+                            style="display: none"
+                        >
+                            <p>Showing data from:</p>
+                            <div class="filter-container-inner">
+                                <div class="from-date">
+                                    <p>Wed March 29, 2020</p>
+                                    <img
+                                        src="/reports/assets/Caret.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="to-date">
+                                    <p>Wed March 29, 2020</p>
+                                    <img
+                                        src="/reports/assets/Caret.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reports-card-grid">
+                            <button class="reports-card sales-card fade-in">
+                                <p class="title">Total Sales</p>
+                                <p class="value">NGN 3,000,000</p>
+                            </button>
+                            <button class="reports-card converts-card fade-in">
+                                <p class="title">Total Converts</p>
+                                <p class="value">150</p>
+                            </button>
+                            <button class="reports-card prospects-card fade-in">
+                                <p class="title">Prospects</p>
+                                <p class="value">150</p>
+                            </button>
+                            <button class="reports-card users-card fade-in">
+                                <p class="title">Users</p>
+                                <p class="value">150</p>
+                            </button>
+                        </div>
+                        <div class="reports-overview">
+                            <div class="recent-reports">
+                                <div class="recent-reports-heading">
+                                    <h4>Recent Reports</h4>
+                                    <button class="view-all-reports">
+                                        View All
+                                    </button>
+                                </div>
+                                <div class="row">
+                                    <p>01</p>
+                                    <h5>Report 001</h5>
+                                    <p class="date">05 jan 2023</p>
+                                    <button class="go-to-reports-view">
+                                        View
+                                    </button>
+                                </div>
+                                <div class="row">
+                                    <p>02</p>
+                                    <h5>Report 002</h5>
+                                    <p class="date">05 jan 2023</p>
+                                    <button class="go-to-reports-view">
+                                        View
+                                    </button>
+                                </div>
+                                <div class="row">
+                                    <p>03</p>
+                                    <h5>Report 003</h5>
+                                    <p class="date">05 jan 2023</p>
+                                    <button class="go-to-reports-view">
+                                        View
+                                    </button>
+                                </div>
+                                <div class="row">
+                                    <p>04</p>
+                                    <h5>Report 004</h5>
+                                    <p class="date">05 jan 2023</p>
+                                    <button class="go-to-reports-view">
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="top-products">
+                                <div class="top-products-top">
+                                    <h4>Top Products</h4>
+                                    <button class="go-to-reports-view">
+                                        View Report
+                                    </button>
+                                </div>
+                                <div class="row blur-row">
+                                    <p>#</p>
+                                    <h5>Name</h5>
+                                    <p>Popularity</p>
+                                    <div></div>
+                                </div>
+                                <div class="row row-1">
+                                    <p>01</p>
+                                    <h5>Motor</h5>
+                                    <div class="faint-line">
+                                        <div class="bold-line"></div>
+                                    </div>
+                                    <span>40%</span>
+                                </div>
+                                <div class="row row-2">
+                                    <p>02</p>
+                                    <h5>Team Life</h5>
+                                    <div class="faint-line">
+                                        <div class="bold-line"></div>
+                                    </div>
+                                    <span>22%</span>
+                                </div>
+                                <div class="row row-3">
+                                    <p>03</p>
+                                    <h5>Group</h5>
+                                    <div class="faint-line">
+                                        <div class="bold-line"></div>
+                                    </div>
+                                    <span>8%</span>
+                                </div>
+                                <div class="row row-4">
+                                    <p>04</p>
+                                    <h5>Leadway Savings</h5>
+                                    <div class="faint-line">
+                                        <div class="bold-line"></div>
+                                    </div>
+                                    <span>30%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-widgets">
+                            <div class="top-referrals">
+                                <h4>Top Referrals</h4>
+
+                                <div class="second-row">
+                                    <div>
+                                        <img
+                                            src="/reports/assets/esther.jpg"
+                                            alt="esther's image"
+                                        />
+                                    </div>
+                                    <p class="name">Esther Abodunrin</p>
+                                    <p class="amount">NGN 52,446</p>
+                                </div>
+                                <div class="second-row">
+                                    <div>
+                                        <img
+                                            src="/reports/assets/johnny.jpg"
+                                            alt="johnny image"
+                                        />
+                                    </div>
+                                    <p class="name">Johnny Jack</p>
+                                    <p class="amount">NGN 52,446</p>
+                                </div>
+                                <div class="second-row">
+                                    <div>
+                                        <img
+                                            src="/reports/assets/ahmed.jpg"
+                                            alt="ahmed image"
+                                        />
+                                    </div>
+                                    <p class="name">Ahmed Koffi</p>
+                                    <p class="amount">NGN 52,446</p>
+                                </div>
+                            </div>
+                            <div class="prospects-conversion">
+                                <div class="prospect-conversion-heading">
+                                    <h4>Prospect Conversion</h4>
+                                    <button>
+                                        Today
+                                        <img
+                                            src="/reports/assets/arrow-down.svg"
+                                            alt="arrow down icon"
+                                        />
+                                    </button>
+                                </div>
+                                <div id="chartContainer">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="top-branches">
+                                <h4>Top Branches</h4>
+
+                                <div class="second-row">
+                                    <div>
+                                        <span class="blue">L</span>
+                                    </div>
+                                    <p class="name">Lagos</p>
+                                    <p class="amount">5400</p>
+                                </div>
+                                <div class="second-row">
+                                    <div>
+                                        <span class="orange">P</span>
+                                    </div>
+                                    <p class="name">Port Harcourt</p>
+                                    <p class="amount">3200</p>
+                                </div>
+                                <div class="second-row">
+                                    <div>
+                                        <span class="green">A</span>
+                                    </div>
+                                    <p class="name">Abuja</p>
+                                    <p class="amount">987</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Reports Container  -->
+                        <div
+                            class="view-all-reports-container"
+                            id="view-all-reports-container"
+                            style="display: none"
+                        >
+                            <div class="sort-by-name-container">
+                                <div class="sort-by-name-container-inner">
+                                    <div class="sort-input-container">
+                                        <div class="search-by">
+                                            <p>Search By: Name</p>
+                                            <div class="img">
+                                                <img
+                                                    src="/reports/assets/arrow-down-2.svg"
+                                                    alt="arrow-down"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="input-container">
+                                            <img
+                                                src="/dashboard/assets/search-icon.svg"
+                                                alt="search-icon"
+                                            />
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <button>Find</button>
+                                </div>
+                            </div>
+                            <h5>Recent search result</h5>
+                            <div class="search-results-container-outer">
+                                <div class="search-results-container">
+                                    <div class="results-row">
+                                        <div>
+                                            <p>Name</p>
+                                            <img
+                                                src="/reports/assets/arrow-upDown.svg"
+                                                alt="arrow-up-down"
+                                            />
+                                        </div>
+                                        <div>
+                                            <p>Date Created</p>
+                                            <img
+                                                src="/reports/assets/arrow-upDown.svg"
+                                                alt="arrow-up-down"
+                                            />
+                                        </div>
+                                        <div>
+                                            <p>Created By</p>
+                                            <img
+                                                src="/reports/assets/arrow-upDown.svg"
+                                                alt="arrow-up-down"
+                                            />
+                                        </div>
+                                        <div>
+                                            <p>Date Modified</p>
+                                            <img
+                                                src="/reports/assets/arrow-upDown.svg"
+                                                alt="arrow-up-down"
+                                            />
+                                        </div>
+                                        <div>
+                                            <p>Action</p>
+                                            <img
+                                                src="/reports/assets/arrow-upDown.svg"
+                                                alt="arrow-up-down"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="results-row">
+                                        <div>
+                                            <p>Report 001</p>
+                                        </div>
+                                        <div>
+                                            <p>04 Jan 2023</p>
+                                        </div>
+                                        <div>
+                                            <p>Micheal Adesanya</p>
+                                        </div>
+                                        <div>
+                                            <p>09 Jan 2023</p>
+                                        </div>
+                                        <div class="action-container">
+                                            <img
+                                                src="/reports/assets/three-dot.svg"
+                                                alt="three dot icon"
+                                                class="three-dot"
+                                            />
+                                            <div class="dropdown">
+                                                <p class="dropdown-item">
+                                                    View
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Edit
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Delete
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-row">
+                                        <div>
+                                            <p>Report 002</p>
+                                        </div>
+                                        <div>
+                                            <p>04 Jan 2023</p>
+                                        </div>
+                                        <div>
+                                            <p>Micheal Adesanya</p>
+                                        </div>
+                                        <div>
+                                            <p>09 Jan 2023</p>
+                                        </div>
+                                        <div class="action-container">
+                                            <img
+                                                src="/reports/assets/three-dot.svg"
+                                                alt="three dot icon"
+                                                class="three-dot"
+                                            />
+                                            <div class="dropdown">
+                                                <p class="dropdown-item">
+                                                    View
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Edit
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Delete
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-row">
+                                        <div>
+                                            <p>Report 003</p>
+                                        </div>
+                                        <div>
+                                            <p>04 Jan 2023</p>
+                                        </div>
+                                        <div>
+                                            <p>Micheal Adesanya</p>
+                                        </div>
+                                        <div>
+                                            <p>09 Jan 2023</p>
+                                        </div>
+                                        <div class="action-container">
+                                            <img
+                                                src="/reports/assets/three-dot.svg"
+                                                alt="three dot icon"
+                                                class="three-dot"
+                                            />
+                                            <div class="dropdown">
+                                                <p class="dropdown-item">
+                                                    View
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Edit
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Delete
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="results-row">
+                                        <div>
+                                            <p>Report 004</p>
+                                        </div>
+                                        <div>
+                                            <p>04 Jan 2023</p>
+                                        </div>
+                                        <div>
+                                            <p>Micheal Adesanya</p>
+                                        </div>
+                                        <div>
+                                            <p>09 Jan 2023</p>
+                                        </div>
+                                        <div class="action-container">
+                                            <img
+                                                src="/reports/assets/three-dot.svg"
+                                                alt="three dot icon"
+                                                class="three-dot"
+                                            />
+                                            <div class="dropdown">
+                                                <p class="dropdown-item">
+                                                    View
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Edit
+                                                </p>
+                                                <p class="dropdown-item">
+                                                    Delete
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sales Report COntainer  -->
+                        <div
+                            class="sales-report-container"
+                            id="sales-report-container"
+                            style="display: none"
+                        >
+                            <div class="sales-report-top">
+                                <div class="sales-report-top-left">
+                                    <p>Sales Report</p>
+                                    <div class="close-rounded-container">
+                                        <img
+                                            src="/reports/assets/close-rounded-icon.svg"
+                                            alt="close icon"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="sales-report-top-right">
+                                    <div class="arrow-left-container">
+                                        <img
+                                            src="/reports/assets/left-arrow.svg"
+                                            alt="left arrow"
+                                        />
+                                    </div>
+                                    <p class="back-to-report-p">
+                                        Back To Report
+                                    </p>
+                                    <button id="openExportReportModalBtn">
+                                        <div class="export-icon-container">
+                                            <img
+                                                src="/reports/assets/right-arrow.svg"
+                                                alt="right-arrow"
+                                            />
+                                        </div>
+                                        Export Report
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="reports-card-grid">
+                                <button
+                                    class="reports-card products-bought fade-in"
+                                >
+                                    <div class="products-bought-inner">
+                                        <div class="block-container">
+                                            <img
+                                                src="/reports/assets/blue-block.svg"
+                                                alt="blue block"
+                                            />
+                                        </div>
+                                        <div class="block-info-middle">
+                                            <h2>134</h2>
+                                            <p>Products Bought</p>
+                                        </div>
+                                        <div class="block-info-right">
+                                            <div class="direction-icon">
+                                                <img
+                                                    src="/reports/assets/green-arrow-up.svg"
+                                                    alt="green arrow up"
+                                                />
+                                            </div>
+                                            <p>+6</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-info-bottom">
+                                        <div></div>
+                                        <div>
+                                            <p>See Breakdown</p>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button
+                                    class="reports-card active-policies fade-in"
+                                >
+                                    <div class="active-policies-inner">
+                                        <div class="block-container">
+                                            <img
+                                                src="/reports/assets/green-block.svg"
+                                                alt="blue block"
+                                            />
+                                        </div>
+                                        <div class="block-info-middle">
+                                            <h2>78</h2>
+                                            <p>Active Policies</p>
+                                        </div>
+                                        <div class="block-info-right">
+                                            <div class="direction-icon">
+                                                <img
+                                                    src="/reports/assets/green-arrow-up.svg"
+                                                    alt="green arrow up"
+                                                />
+                                            </div>
+                                            <p>+6</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-info-bottom">
+                                        <div>
+                                            <div class="bottom-icon">
+                                                <img
+                                                    src="/reports/assets/corporate.svg"
+                                                    alt="building icon"
+                                                />
+                                            </div>
+                                            <p class="color-text">Corporate:</p>
+                                            <p>10</p>
+                                        </div>
+                                        <div>
+                                            <div class="bottom-icon">
+                                                <img
+                                                    src="/reports/assets/individual.svg"
+                                                    alt="individual icon"
+                                                />
+                                            </div>
+                                            <p class="color-text">
+                                                Individual:
+                                            </p>
+                                            <p>40</p>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="reports-card drop-offs fade-in">
+                                    <div class="drop-offs-inner">
+                                        <div class="block-container">
+                                            <img
+                                                src="/reports/assets/red-block.svg"
+                                                alt="blue block"
+                                            />
+                                        </div>
+                                        <div class="block-info-middle">
+                                            <h2>20</h2>
+                                            <p>Drop Offs</p>
+                                        </div>
+                                        <div class="block-info-right">
+                                            <div class="direction-icon">
+                                                <img
+                                                    src="/reports/assets/green-arrow-up.svg"
+                                                    alt="green arrow up"
+                                                />
+                                            </div>
+                                            <p>+6</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-info-bottom">
+                                        <div>
+                                            <div class="bottom-icon">
+                                                <img
+                                                    src="/reports/assets/corporate.svg"
+                                                    alt="building icon"
+                                                />
+                                            </div>
+                                            <p class="color-text">Corporate:</p>
+                                            <p>5</p>
+                                        </div>
+                                        <div>
+                                            <div class="bottom-icon">
+                                                <img
+                                                    src="/reports/assets/individual.svg"
+                                                    alt="individual icon"
+                                                />
+                                            </div>
+                                            <p class="color-text">
+                                                Individual:
+                                            </p>
+                                            <p>15</p>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button
+                                    class="reports-card in-progress fade-in"
+                                >
+                                    <div class="in-progress-inner">
+                                        <div class="block-container">
+                                            <img
+                                                src="/reports/assets/ask-block.svg"
+                                                alt="blue block"
+                                            />
+                                        </div>
+                                        <div class="block-info-middle">
+                                            <h2>5</h2>
+                                            <p>In Progress</p>
+                                        </div>
+                                        <div class="block-info-right">
+                                            <div class="direction-icon">
+                                                <img
+                                                    src="/reports/assets/green-arrow-up.svg"
+                                                    alt="green arrow up"
+                                                />
+                                            </div>
+                                            <p>+6</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-info-bottom">
+                                        <div>
+                                            <div class="bottom-icon">
+                                                <img
+                                                    src="/reports/assets/corporate.svg"
+                                                    alt="building icon"
+                                                />
+                                            </div>
+                                            <p class="color-text">Corporate:</p>
+                                            <p>1</p>
+                                        </div>
+                                        <div>
+                                            <div class="bottom-icon">
+                                                <img
+                                                    src="/reports/assets/individual.svg"
+                                                    alt="individual icon"
+                                                />
+                                            </div>
+                                            <p class="color-text">
+                                                Individual:
+                                            </p>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart-container-inner">
+                                    <div class="chart-heading">
+                                        <div class="chart-heading-left">
+                                            <div class="check-container">
+                                                <div class="check-container-in">
+                                                    <img
+                                                        src="/reports/assets/check.svg"
+                                                        alt="check icon"
+                                                    />
+                                                </div>
+                                                <p>Motor</p>
+                                            </div>
+                                            <div class="check-container">
+                                                <div class="check-container-in">
+                                                    <img
+                                                        src="/reports/assets/check.svg"
+                                                        alt="check icon"
+                                                    />
+                                                </div>
+                                                <p>Term Life</p>
+                                            </div>
+                                            <div class="check-container">
+                                                <div class="check-container-in">
+                                                    <img
+                                                        src="/reports/assets/check.svg"
+                                                        alt="check icon"
+                                                    />
+                                                </div>
+                                                <p>Group Life</p>
+                                            </div>
+                                            <div class="check-container">
+                                                <div class="check-container-in">
+                                                    <img
+                                                        src="/reports/assets/check.svg"
+                                                        alt="check icon"
+                                                    />
+                                                </div>
+                                                <p>Leadway Savings</p>
+                                            </div>
+                                        </div>
+                                        <button
+                                            id="income-breakdown"
+                                            class="chart-heading-right"
+                                        >
+                                            Income Breakdown
+                                        </button>
+                                    </div>
+                                    <div class="main-chart">
+                                        <canvas id="myChart-2"></canvas>
+                                        <div class="custom-legend">
+                                            <div class="legend-item">
+                                                <span
+                                                    class="legend-color"
+                                                    style="
+                                                        background-color: #8dd3c7;
+                                                    "
+                                                ></span>
+                                                <span class="legend-label"
+                                                    >Motor</span
+                                                >
+                                            </div>
+                                            <div class="legend-item">
+                                                <span
+                                                    class="legend-color"
+                                                    style="
+                                                        background-color: #ffffb3;
+                                                    "
+                                                ></span>
+                                                <span class="legend-label"
+                                                    >Term Life</span
+                                                >
+                                            </div>
+                                            <div class="legend-item">
+                                                <span
+                                                    class="legend-color"
+                                                    style="
+                                                        background-color: #bebada;
+                                                    "
+                                                ></span>
+                                                <span class="legend-label"
+                                                    >Group Life</span
+                                                >
+                                            </div>
+                                            <div class="legend-item">
+                                                <span
+                                                    class="legend-color"
+                                                    style="
+                                                        background-color: #fb8072;
+                                                    "
+                                                ></span>
+                                                <span class="legend-label"
+                                                    >Leadway Savings</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="chart-container-inner-2"
+                                    style="display: none"
+                                >
+                                    <button
+                                        class="chart-heading-right align-right"
+                                        id="back-to-reports"
+                                    >
+                                        Back to reports
+                                        <img
+                                            src="/reports/assets/arrow-right.svg"
+                                            alt="right arrow icon"
+                                        />
+                                    </button>
+                                    <div class="chart-container-2">
+                                        <div id="chart"></div>
+                                        <div class="box-chart-content">
+                                            <div class="data-table-container">
+                                                <div class="table-header">
+                                                    <span class="header-title"
+                                                        >YTD</span
+                                                    >
+                                                    <div class="header-links">
+                                                        <a href="#">1 Week</a>
+                                                        <a href="#">1 Month</a>
+                                                    </div>
+                                                </div>
+                                                <table class="data-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Motor</th>
+                                                            <th>Term Life</th>
+                                                            <th>Group Life</th>
+                                                            <th>
+                                                                Leadway Savigs
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                10,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                30,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                65,023.26
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                169,302.33
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                3,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                10,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                15,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                25,000
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="
+                                                                    color: #0096d6;
+                                                                "
+                                                            >
+                                                                7,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #0096d6;
+                                                                "
+                                                            >
+                                                                20,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #0096d6;
+                                                                "
+                                                            >
+                                                                50,023.26
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #0096d6;
+                                                                "
+                                                            >
+                                                                144,302.33
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                2,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                2,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                2,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #f66b22;
+                                                                "
+                                                            >
+                                                                2,000
+                                                            </td>
+                                                        </tr>
+                                                        <tr
+                                                            style="
+                                                                background-color: #d5f5e3;
+                                                            "
+                                                        >
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                5,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                18,000
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                48,026.36
+                                                            </td>
+                                                            <td
+                                                                style="
+                                                                    color: #47a51a;
+                                                                "
+                                                            >
+                                                                142,302.33
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Structure -->
+                    <div id="modal-overlay" class="modal-overlay"></div>
+                    <!-- Modal for Create  -->
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span id="modal-close" class="modal-close"
+                                >&times;</span
+                            >
+                            <h2>Report Parameters</h2>
+                            <p class="select-p">
+                                Select parameters you want to include in your
+                                report
+                            </p>
+                            <div class="sales-review">
+                                <p>Sales Overview</p>
+                                <span>Change</span>
+                            </div>
+                            <div class="filter-container">
+                                <p>Showing data from:</p>
+                                <div class="filter-container-inner">
+                                    <div class="from-date">
+                                        <p>Wed March 29, 2020</p>
+                                        <img
+                                            src="/reports/assets/Caret.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="to-date">
+                                        <p>Wed March 29, 2020</p>
+                                        <img
+                                            src="/reports/assets/Caret.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-wrapper-46">
+                                <input
+                                    class="inp-cbx"
+                                    id="cbx-46"
+                                    type="checkbox"
+                                />
+                                <label class="cbx" for="cbx-46"
+                                    ><span>
+                                        <svg
+                                            width="12px"
+                                            height="10px"
+                                            viewbox="0 0 12 10"
+                                        >
+                                            <polyline
+                                                points="1.5 6 4.5 9 10.5 1"
+                                            ></polyline></svg></span
+                                    ><span>Turn on recurrent reporting</span>
+                                </label>
+                            </div>
+                            <div class="without-recurrent-reporting-container">
+                                <div class="select-buttons">
+                                    <p>Select All</p>
+                                    <p>Select None</p>
+                                </div>
+                                <div class="select-container">
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-1"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-1"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span>No of New Customers</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-2"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-2"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of New Corporate
+                                                Customers</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-3"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-3"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of New Retails
+                                                Customers</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-4"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-4"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span>No of Active Customers</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-5"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-5"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of Inactive Customers</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-6"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-6"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of Customers with Active
+                                                Products</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-7"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-7"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of Customers with Inactive
+                                                Products</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-8"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-8"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of Current Prospects</span
+                                            >
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="with-recurrent-reporting-container"
+                                style="display: none"
+                            >
+                                <div class="when-container">
+                                    <p>When:</p>
+                                    <div class="when-container-inner">
+                                        <p>Every first day of the month</p>
+                                        <div class="img">
+                                            <img
+                                                src="/reports/assets/Caret.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="to-container">
+                                    <p>To:</p>
+                                    <div class="to-container-inner">
+                                        <p>Enter email address</p>
+                                    </div>
+                                </div>
+                                <div class="format-container">
+                                    <p>Format:</p>
+                                    <div class="format-container-inner">
+                                        <div>
+                                            <p>Excel</p>
+                                            <div class="checkbox-wrapper-34">
+                                                <input
+                                                    class="tgl tgl-ios"
+                                                    id="toggle-34"
+                                                    type="checkbox"
+                                                />
+                                                <label
+                                                    class="tgl-btn"
+                                                    for="toggle-34"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>PDF</p>
+
+                                            <div class="checkbox-wrapper-34">
+                                                <input
+                                                    class="tgl tgl-ios"
+                                                    id="toggle-35"
+                                                    type="checkbox"
+                                                />
+                                                <label
+                                                    class="tgl-btn"
+                                                    for="toggle-35"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>PPT</p>
+                                            <div class="checkbox-wrapper-34">
+                                                <input
+                                                    class="tgl tgl-ios"
+                                                    id="toggle-36"
+                                                    type="checkbox"
+                                                />
+                                                <label
+                                                    class="tgl-btn"
+                                                    for="toggle-36"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button id="modal-cancel">Cancel</button>
+                                <button id="modal-create-report">
+                                    Create Report
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="report-create-success-modal"
+                        style="display: none"
+                    >
+                        <div class="report-create-success-modal-inner">
+                            <h3>Report created successfully</h3>
+                            <div>
+                                <img
+                                    src="/reports/assets/success-icon.svg"
+                                    alt="success icon"
+                                />
+                            </div>
+                            <button id="view-btn">View</button>
+                        </div>
+                    </div>
+                    <!-- Modal for Export  -->
+                    <div id="modal-export" class="modal">
+                        <div class="modal-content">
+                            <span id="modal-close" class="modal-close"
+                                >&times;</span
+                            >
+                            <h2>Report Parameters</h2>
+                            <p class="select-p">
+                                Select parameters you want to include in your
+                                report
+                            </p>
+                            <div class="sales-review">
+                                <p>Sales Overview</p>
+                                <span>Change</span>
+                            </div>
+                            <div class="filter-container">
+                                <p>Showing data from:</p>
+                                <div class="filter-container-inner">
+                                    <div class="from-date">
+                                        <p>Wed March 29, 2020</p>
+                                        <img
+                                            src="/reports/assets/Caret.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="to-date">
+                                        <p>Wed March 29, 2020</p>
+                                        <img
+                                            src="/reports/assets/Caret.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-wrapper-46">
+                                <input
+                                    class="inp-cbx"
+                                    id="cbx-467"
+                                    type="checkbox"
+                                />
+                                <label class="cbx" for="cbx-467"
+                                    ><span>
+                                        <svg
+                                            width="12px"
+                                            height="10px"
+                                            viewbox="0 0 12 10"
+                                        >
+                                            <polyline
+                                                points="1.5 6 4.5 9 10.5 1"
+                                            ></polyline></svg></span
+                                    ><span>Turn on recurrent reporting</span>
+                                </label>
+                            </div>
+                            <div
+                                class="without-recurrent-reporting-container export-without"
+                            >
+                                <div
+                                    class="select-buttons export-select-buttons"
+                                >
+                                    <p>Select All</p>
+                                    <p>Select None</p>
+                                </div>
+                                <div class="select-container">
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-11"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-11"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span>No of Active Customers</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-21"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-21"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span
+                                                >No of Drop Off Customers
+                                                (Prospects)</span
+                                            >
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-31"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-31"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span>No of Admin Users</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-41"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-41"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span>Income Statement</span>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-wrapper-46 check-2">
+                                        <input
+                                            class="inp-cbx"
+                                            id="cbx-51"
+                                            type="checkbox"
+                                        />
+                                        <label class="cbx" for="cbx-51"
+                                            ><span>
+                                                <svg
+                                                    width="12px"
+                                                    height="10px"
+                                                    viewbox="0 0 12 10"
+                                                >
+                                                    <polyline
+                                                        points="1.5 6 4.5 9 10.5 1"
+                                                    ></polyline></svg></span
+                                            ><span>Commission Payment</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="with-recurrent-reporting-container export-with"
+                                style="display: none"
+                            >
+                                <div class="when-container">
+                                    <p>When:</p>
+                                    <div class="when-container-inner">
+                                        <p>Every first day of the month</p>
+                                        <div class="img">
+                                            <img
+                                                src="/reports/assets/Caret.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="to-container">
+                                    <p>To:</p>
+                                    <div class="to-container-inner">
+                                        <p>Enter email address</p>
+                                    </div>
+                                </div>
+                                <div class="format-container">
+                                    <p>Format:</p>
+                                    <div class="format-container-inner">
+                                        <div>
+                                            <p>Excel</p>
+                                            <div class="checkbox-wrapper-34">
+                                                <input
+                                                    class="tgl tgl-ios"
+                                                    id="toggle-34"
+                                                    type="checkbox"
+                                                />
+                                                <label
+                                                    class="tgl-btn"
+                                                    for="toggle-34"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>PDF</p>
+
+                                            <div class="checkbox-wrapper-34">
+                                                <input
+                                                    class="tgl tgl-ios"
+                                                    id="toggle-35"
+                                                    type="checkbox"
+                                                />
+                                                <label
+                                                    class="tgl-btn"
+                                                    for="toggle-35"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>PPT</p>
+                                            <div class="checkbox-wrapper-34">
+                                                <input
+                                                    class="tgl tgl-ios"
+                                                    id="toggle-36"
+                                                    type="checkbox"
+                                                />
+                                                <label
+                                                    class="tgl-btn"
+                                                    for="toggle-36"
+                                                ></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-buttons">
+                                <button id="modal-cancel">Cancel</button>
+                                <button id="modal-export-report">
+                                    Export Report
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="report-create-success-modal report-export-success-modal"
+                        style="display: none"
+                    >
+                        <div class="report-create-success-modal-inner">
+                            <h3>Report exported successfully</h3>
+                            <div>
+                                <img
+                                    src="/reports/assets/success-icon.svg"
+                                    alt="success icon"
+                                />
+                            </div>
+                            <button id="view-btn">View</button>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="/scripts.js"></script>
+
+        <script src="/reports/js/reports.js"></script>
     </body>
 </html>
