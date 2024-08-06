@@ -65,10 +65,7 @@ body {
           border: none;
           outline: none;
           width: 100%;
-
-          input::placeholder {
-            color: red;
-          }
+          color: var(--ash-color);
         }
       }
 
@@ -88,6 +85,7 @@ body {
           border: none;
           outline: none;
           width: 90%;
+          color: var(--ash-color);
         }
 
         button {
@@ -100,31 +98,13 @@ body {
         }
       }
 
-      .remeber-me {
-        display: flex;
-        justify-content: space-between;
-        font-size: 12px;
-
-        .logged-in {
-          display: flex;
-          align-items: center;
-          gap: 5px;
-        }
-        a {
-          color: var(--ash-color);
-        }
-
-        .check input[type="checkbox"] {
-          accent-color: var(--primary-color);
-        }
-      }
-
       .login-btn {
         background-color: var(--primary-color);
         padding: 0.7rem;
         border-radius: 5px;
         border: none;
         color: var(--white);
+        margin-top: 1rem;
       }
     }
 
