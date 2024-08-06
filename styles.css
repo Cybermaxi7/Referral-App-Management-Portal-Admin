@@ -60,6 +60,9 @@ img {
   color: #fff;
   /* Ensure it stays above other content */
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo-container {
   width: 20.2rem;
@@ -101,6 +104,44 @@ img {
   font-weight: 450;
   font-size: 1.4rem;
   line-height: 2.4rem;
+}
+
+div.chat-body {
+  position: relative;
+
+  .badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
+
+  .chat-button {
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* color: black; */
+    border-radius: 10px;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 1rem;
+
+    img {
+      width: 20px;
+    }
+
+    span {
+      color: white;
+      font-size: 12px;
+    }
+  }
 }
 /* Main content area styling */
 .main-content {

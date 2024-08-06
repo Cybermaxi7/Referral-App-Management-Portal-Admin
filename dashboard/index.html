@@ -74,6 +74,35 @@
             </li>
           </ul>
         </nav>
+
+        <div class="chat-body">
+          <div class="badge">2+</div>
+          <a href="#" class="chat-button" id="chatButton">
+            <img src="./assets/chart-icon.png" alt="" />
+            <span>Open chat</span>
+          </a>
+        </div>
+
+        <!-- Chat Modal -->
+        <div id="chatModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Customer Chat</h2>
+            <div class="chat-container">
+              <div class="chat-messages">
+                <!-- Messages will appear here -->
+              </div>
+              <div class="chat-input">
+                <input
+                  type="text"
+                  id="messageInput"
+                  placeholder="Type your message..."
+                />
+                <button id="sendMessageButton">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </aside>
 
       <!-- Main Content Area -->
@@ -314,3 +343,27 @@
     </div>
   </body>
 </html>
+
+<script>
+  // Get modal and button elements
+  var chatModal = document.getElementById("chatModal");
+  var chatButton = document.getElementById("chatButton");
+  var closeButton = document.getElementsByClassName("close")[0];
+
+  // Show modal when chat button is clicked
+  chatButton.onclick = function () {
+    chatModal.style.display = "block";
+  };
+
+  // Close modal when close button is clicked
+  closeButton.onclick = function () {
+    chatModal.style.display = "none";
+  };
+
+  // Close modal when clicking outside the modal content
+  window.onclick = function (event) {
+    if (event.target == chatModal) {
+      chatModal.style.display = "none";
+    }
+  };
+</script>

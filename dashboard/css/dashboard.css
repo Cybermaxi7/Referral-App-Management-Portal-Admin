@@ -3,6 +3,7 @@
   font-weight: 700;
   font-family: "Circular Std";
   line-height: 20px;
+  padding: 1rem 0;
 }
 
 .dashboard-cards {
@@ -206,6 +207,111 @@
           font-size: 10px;
         }
       }
+    }
+  }
+}
+
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  display: flex;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+#sendMessageButton {
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+#sendMessageButton:hover {
+  background-color: #218838;
+}
+
+@media screen and (max-width: 767px) {
+  .dashboard-cards {
+    flex-direction: column;
+    gap: 3rem;
+
+    .card-one,
+    .card-two,
+    .card-three,
+    .card-four {
+      width: 100%;
+    }
+  }
+
+  .dashboard-card-bottom {
+    flex-direction: column;
+
+    .prospect-card-left {
+      width: 100%;
+    }
+
+    .prospect-chart-activity-right {
+      width: 100%;
     }
   }
 }
