@@ -1561,6 +1561,9 @@
     .block-info-bottom > div {
         gap: 0.5rem;
     }
+    #myChart-2 {
+        width: 100% !important;
+    }
 }
 @media screen and (max-width: 648px) {
     .search-results-container {
