@@ -1,0 +1,361 @@
+.settings-container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 35rem auto;
+    gap: 2rem;
+}
+.left-container,
+.settings-display {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 5px;
+}
+.left-container {
+    padding: 2rem;
+}
+.left-container-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.left-container-inner button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #585858;
+    gap: 2rem;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+.left-container-inner button .img {
+    width: 4rem;
+    height: 4rem;
+}
+.left-container-inner button p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.settings-content {
+    display: none;
+}
+
+.settings-content.active {
+    display: block;
+}
+form {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.row-container {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 2.3rem;
+    display: flex;
+    flex-direction: column;
+}
+form h2 {
+    margin-top: 1rem;
+    color: #002855;
+    font-size: 2.4rem;
+    line-height: 30.36px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+.row div {
+    display: flex;
+    flex-direction: column;
+}
+.row div label {
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 24px;
+
+    font-weight: 450;
+}
+.row div input {
+    background-color: #e9e9e9;
+    color: #8c8c8c;
+    font-size: 1.7rem;
+    line-height: 24px;
+    font-weight: 450;
+    height: 4.9rem;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+.input-down-icon {
+    width: 13.26px;
+    height: 13.26px;
+}
+.input-container {
+    display: flex;
+    background-color: #e9e9e9;
+    align-items: center;
+    flex-direction: row !important;
+    padding-right: 1rem;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+.input-container input {
+    flex: 1;
+    border-radius: 5px;
+}
+#account-number,
+#bank-account-name,
+.input-container input {
+    background-color: #fff !important;
+}
+
+.input-container,
+#account-number,
+#bank-account-name {
+    border: 1px solid #7f8b94 !important;
+    background-color: #fff;
+}
+.save-btn {
+    align-self: flex-end;
+    background-color: #002855;
+    padding: 1.2rem 6rem;
+    border-radius: 6px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 29.53px;
+    color: #fff;
+}
+.change-password,
+.notification-settings {
+    padding: 2rem;
+}
+
+.change-password h2,
+.notification-settings h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #002855;
+    line-height: 30.36px;
+}
+.password-form {
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.password-inner {
+    width: 100%;
+    max-width: 40rem;
+}
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 2rem;
+}
+.form-group label {
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 24px;
+    font-weight: 450;
+}
+.form-group input {
+    height: 5rem;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 450;
+    line-height: 24px;
+    color: #c4c4c4;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+    border: 1px solid #7f8b94;
+}
+.password-inner button {
+    width: 100%;
+    height: 5rem;
+    font-size: 2.4rem;
+    background-color: #002855;
+    line-height: 29.52px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+.all-notifications-cont,
+.chats-cont,
+.prospects-cont {
+    background-color: #f8f8f8;
+    margin-bottom: 1.2rem;
+    padding: 2rem;
+}
+.notifications-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 0.4rem;
+}
+.notifications-row p {
+    color: #7f8b94;
+    font-size: 1.4rem;
+    line-height: 17.57px;
+    font-weight: 400;
+}
+.notification-heading {
+    color: #34475e !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    line-height: 21.09px !important;
+}
+.notifications-row span {
+    display: block;
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 17.57px;
+    color: #34475e;
+}
+
+.checkbox-wrapper-90 {
+    --blue: #00b388;
+    --g08: #e1e5eb;
+    --g04: #848ea1;
+}
+
+.checkbox-wrapper-90 .tgl {
+    display: none;
+}
+.checkbox-wrapper-90 .tgl,
+.checkbox-wrapper-90 .tgl:after,
+.checkbox-wrapper-90 .tgl:before,
+.checkbox-wrapper-90 .tgl *,
+.checkbox-wrapper-90 .tgl *:after,
+.checkbox-wrapper-90 .tgl *:before,
+.checkbox-wrapper-90 .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+.checkbox-wrapper-90 .tgl::selection,
+.checkbox-wrapper-90 .tgl:after::selection,
+.checkbox-wrapper-90 .tgl:before::selection,
+.checkbox-wrapper-90 .tgl *::selection,
+.checkbox-wrapper-90 .tgl *:after::selection,
+.checkbox-wrapper-90 .tgl *:before::selection,
+.checkbox-wrapper-90 .tgl + .tgl-btn::selection {
+    background: none;
+}
+.checkbox-wrapper-90 .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+.checkbox-wrapper-90 .tgl + .tgl-btn:after,
+.checkbox-wrapper-90 .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 44%;
+    height: 100%;
+}
+.checkbox-wrapper-90 .tgl + .tgl-btn:after {
+    left: 0;
+}
+.checkbox-wrapper-90 .tgl + .tgl-btn:before {
+    display: inline;
+    position: absolute;
+    top: 7px;
+}
+.checkbox-wrapper-90 .tgl:checked + .tgl-btn:after {
+    left: 56.5%;
+}
+
+.checkbox-wrapper-90 .tgl-ios + .tgl-btn {
+    background: var(--g08);
+    border-radius: 20rem;
+    padding: 2px;
+    transition: all 0.4s ease;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.checkbox-wrapper-90 .tgl-ios + .tgl-btn:after {
+    border-radius: 2em;
+    background: #fff;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        padding 0.3s ease, margin 0.3s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.checkbox-wrapper-90 .tgl-ios + .tgl-btn:before {
+    content: "No";
+    left: 28px;
+    color: var(--g04);
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.checkbox-wrapper-90 .tgl-ios + .tgl-btn:active {
+    box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.checkbox-wrapper-90 .tgl-ios + .tgl-btn:active:after {
+    padding-right: 0.4em;
+}
+.checkbox-wrapper-90 .tgl-ios:checked + .tgl-btn {
+    background: var(--blue);
+}
+.checkbox-wrapper-90 .tgl-ios:checked + .tgl-btn:active {
+    box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.checkbox-wrapper-90 .tgl-ios:checked + .tgl-btn:active:after {
+    margin-left: -0.4em;
+}
+.checkbox-wrapper-90 .tgl-ios:checked + .tgl-btn:before {
+    content: "Yes";
+    left: 7px;
+    color: #fff;
+}
+@keyframes wave-46 {
+    50% {
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .left-container-inner {
+        grid-template-columns: 1fr;
+    }
+    .settings-container {
+        grid-template-columns: 20rem auto;
+    }
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .left-container-inner button .img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .settings-container {
+        grid-template-columns: 15rem auto;
+    }
+}
