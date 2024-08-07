@@ -21,7 +21,7 @@
         />
         <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/styles.css" />
-        <link rel="stylesheet" href="./css/dashboard.css" />
+        <link rel="stylesheet" href="/dashboard/css/dashboard.css" />
     </head>
     <body>
         <div class="dashboard">
@@ -188,7 +188,11 @@
                 <!-- Content Area (this is the part that changes) -->
                 <div class="content">
                     <div class="welcome-message">
-                        <p>Welcome, Deens</p>
+                        <h2>Welcome, Deens</h2>
+                        <img
+                            src="/dashboard/assets/wabing-hand.svg"
+                            alt="wave hand icon"
+                        />
                     </div>
                     <!-- Dashboard Cards Begin-->
                     <div class="dashboard-cards">
@@ -356,11 +360,20 @@
 
                         <div class="prospect-chart-activity-right">
                             <div class="card-chart-right">
-                                <div class="card-top-right">
-                                    <p>Prospect Conversion</p>
-                                </div>
-                                <div class="chart-body">
-                                    <img src="./assets/chart.png" alt="" />
+                                <div class="prospects-conversion">
+                                    <div class="prospect-conversion-heading">
+                                        <h4>Prospect Conversion</h4>
+                                        <button>
+                                            Today
+                                            <img
+                                                src="/reports/assets/arrow-down.svg"
+                                                alt="arrow down icon"
+                                            />
+                                        </button>
+                                    </div>
+                                    <div id="chartContainer">
+                                        <canvas id="myChartt"></canvas>
+                                    </div>
                                 </div>
                             </div>
 
@@ -430,11 +443,12 @@
                 </div>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <script src="/dashboard/js/dashboard.js"></script>
         <script src="/scripts.js"></script>
     </body>
 </html>
-
-
 
 <script>
     // Get modal and button elements
