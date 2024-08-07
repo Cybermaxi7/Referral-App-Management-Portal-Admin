@@ -59,74 +59,32 @@ body {
       form {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 10rem; */
+  
+         h1{
+          font-size: 1.9rem;
 
-        .first-input,
-        .second-input {
-          width: 100%;
-          background-color: white;
-          padding: 1rem 1.5em;
-          border-radius: 5px;
-        }
-
-        .first-input {
-          label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 1.4rem;
+          span{
+            color: var(--primary-color);
           }
-
-          input {
-            border: none;
-            outline: none;
-            width: 100%;
-            height: 4rem;
-            color: var(--ash-color);
-            font-size: 1.4rem;
-          }
-        }
-
-        .second-input {
-          .label-group {
-            display: flex;
-            justify-content: space-between;
-
-            label {
-              margin-bottom: 15px;
-              font-size: 1.4rem;
-            }
-          }
+         }
 
 
-          input {
-            border: none;
-            outline: none;
-            width: 90%;
-            height: 4rem;
-            font-size: 1.4rem;
-            color: var(--ash-color);
-          }
-
-        }
-
-        .remeber-me {
+        .otp-group{
           display: flex;
           justify-content: space-between;
-          font-size: 1.4rem;
+          padding-top: 1rem;
 
-          .logged-in {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-          }
-          a {
-            color: var(--ash-color);
-          }
-
-          .check input[type="checkbox"] {
-            accent-color: var(--primary-color);
+          input {
+            width: 18%;
+            height: 60px;
+            font-size: 5rem;
+            text-align: center;
+            border: 2px solid var(--primary-color);
+            margin-bottom: 16rem;
           }
         }
+        
 
         .login-btn {
           background-color: var(--primary-color);
@@ -135,6 +93,7 @@ body {
           border: none;
           color: var(--white);
           font-size: 1.6rem;
+          opacity: .2;
 
           a{
             text-decoration: none;
@@ -143,7 +102,13 @@ body {
         }
       }
 
-     
+      p {
+        a {
+          text-decoration: none;
+          color: var(--primary-color);
+          font-weight: 800;
+        }
+      }
     }
 
     .right-side {

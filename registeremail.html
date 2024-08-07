@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="registeremail.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -32,47 +32,31 @@
     />
   </head>
   <body>
-   <div class="container">
+    <div class="container">
       <div class="left-side">
         <img src="./dashboard/assets/Login-logo.png" alt="" />
-        <h1>Referral Management</h1>
-  
-        <p>Welcome. Sign up to access the portal.</p>
-  
-        <form action="registeremail.html">
+
+        <div class="otp">
+          <h1>Reset Password</h1>
+
+          <p>An OTP will be sent to initiate your password change</p>
+        </div>
+
+        <form action="registerotp.html">
           <div class="first-input">
-            <label for="">Email Address</label>
-            <i class="fa fa-user"></i>
-            <input type="text" placeholder="enter email address" required>
+            <label for="">Email</label>
+            <input type="text" placeholder="enter your email" required>
           </div>
-          <div class="second-input">
-            <div class="label-group">
-              <label for="id">Password</label>
-              <button
-                type="button"
-                class="show-hide-btn"
-                onclick="showPassword()"
-                id="show-password-button"
-              >
-                SHOW
-              </button>
-            </div>
-            <i class="fa fa-lock"></i>
-            <input
-              type="password"
-              placeholder="enter your password"
-              required
-              id="show-password"
-            />
-          </div>
-  
-          <button type="submit" class="login-btn"><a href="#">Proceed</a></button>
+
+          <button type="submit" class="login-btn">
+            <a href="#">Proceed</a>
+          </button>
         </form>
-  
+
         <p>Already have an account? <a href="index.html">Login</a></p>
       </div>
-  
+
       <div class="right-side"></div>
-    </body>
-   </div>
+    </div>
+  </body>
 </html>
