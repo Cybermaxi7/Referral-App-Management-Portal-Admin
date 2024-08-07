@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="/styles.css">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -31,45 +32,47 @@
     />
   </head>
   <body>
-    <div class="left-side">
-      <img src="./dashboard/assets/Login-logo.png" alt="" />
-      <h1>Referral Management</h1>
-
-      <p>Welcome. Sign up to access the portal.</p>
-
-      <form action="">
-        <div class="first-input">
-          <label for="">Email Address</label>
-          <i class="fa fa-user"></i>
-          <input type="text" placeholder="enter email address" />
-        </div>
-        <div class="second-input">
-          <div class="label-group">
-            <label for="id">Password</label>
-            <button
-              type="button"
-              class="show-hide-btn"
-              onclick="showPassword()"
-              id="show-password-button"
-            >
-              SHOW
-            </button>
+   <div class="container">
+      <div class="left-side">
+        <img src="./dashboard/assets/Login-logo.png" alt="" />
+        <h1>Referral Management</h1>
+  
+        <p>Welcome. Sign up to access the portal.</p>
+  
+        <form action="">
+          <div class="first-input">
+            <label for="">Email Address</label>
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="enter email address" />
           </div>
-          <i class="fa fa-lock"></i>
-          <input
-            type="password"
-            placeholder="enter your password"
-            required
-            id="show-password"
-          />
-        </div>
-
-        <button type="submit" class="login-btn">Proceed</button>
-      </form>
-
-      <p>Already have an account? <a href="index.html">Login</a></p>
-    </div>
-
-    <div class="right-side"></div>
-  </body>
+          <div class="second-input">
+            <div class="label-group">
+              <label for="id">Password</label>
+              <button
+                type="button"
+                class="show-hide-btn"
+                onclick="showPassword()"
+                id="show-password-button"
+              >
+                SHOW
+              </button>
+            </div>
+            <i class="fa fa-lock"></i>
+            <input
+              type="password"
+              placeholder="enter your password"
+              required
+              id="show-password"
+            />
+          </div>
+  
+          <button type="submit" class="login-btn">Proceed</button>
+        </form>
+  
+        <p>Already have an account? <a href="index.html">Login</a></p>
+      </div>
+  
+      <div class="right-side"></div>
+    </body>
+   </div>
 </html>
