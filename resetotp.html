@@ -18,7 +18,7 @@
       href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
     />
     <title>Login - Referral Management App</title>
-    <link rel="stylesheet" href="resetpass.css" />
+    <link rel="stylesheet" href="registerotp.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -51,36 +51,20 @@
         <img src="./dashboard/assets/Login-logo.png" alt="" />
         <h1>Referral Management</h1>
 
-        <p>Setup your password</p>
+        <p>Welcome. Login to your portal account.</p>
 
         <form action="">
-          <div class="first-input">
-            <label for="">New Password</label>
-            <input type="text" placeholder="enter email address" />
-          </div>
-          <div class="second-input">
-            <div class="label-group">
-              <label for="id">Confirm Password</label>
-            </div>
-            <input
-              type="password"
-              placeholder="enter your password"
-              required
-              id="show-password"
-            />
-          </div>
-
-          <div class="remeber-me">
-            <div class="check">
-              <label for="logged-in" class="logged-in">
-                <input type="checkbox" id="logged-in" /> keep me logged in
-              </label>
-            </div>
-            <!-- label-group for remember me and reset password end -->
+          <h1>Enter the OTP sent to <span>femiade***@fbnng.com</span></h1>
+          <div class="otp-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
           </div>
 
           <button type="submit" class="login-btn">
-            <a href="index.html">Change Password</a>
+            <a href="resetpass.html">Proceed</a>
           </button>
         </form>
       </div>

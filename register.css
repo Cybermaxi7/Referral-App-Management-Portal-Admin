@@ -91,12 +91,7 @@ body {
             display: flex;
             justify-content: space-between;
 
-            label {
-              margin-bottom: 15px;
-              font-size: 1.4rem;
-            }
           }
-
 
           input {
             border: none;
@@ -106,26 +101,6 @@ body {
             font-size: 1.4rem;
             color: var(--ash-color);
           }
-
-        }
-
-        .remeber-me {
-          display: flex;
-          justify-content: space-between;
-          font-size: 1.4rem;
-
-          .logged-in {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-          }
-          a {
-            color: var(--ash-color);
-          }
-
-          .check input[type="checkbox"] {
-            accent-color: var(--primary-color);
-          }
         }
 
         .login-btn {
@@ -134,7 +109,7 @@ body {
           border-radius: 5px;
           border: none;
           color: var(--white);
-          font-size: 1.6rem;
+          margin-top: 1.6rem;
 
           a{
             text-decoration: none;
@@ -143,7 +118,7 @@ body {
         }
       }
 
-     
+      
     }
 
     .right-side {
@@ -155,13 +130,13 @@ body {
       background-repeat: no-repeat;
     }
   }
-}
 
-@media screen and (max-width: 767px) {
-  .left-side {
-    width: 100% !important;
-  }
-  .right-side {
-    display: none;
+  @media screen and (max-width: 767px) {
+    .left-side {
+      width: 100% !important;
+    }
+    .right-side {
+      display: none;
+    }
   }
 }
