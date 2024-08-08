@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prospects - Referral App Management Portal</title>
+        <link rel="canonical" href="https://www.firstbanknigeria.com/" />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+        />
+        <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/branch/css/bulky.css" />
+    </head>
+    <body>
+        <div class="dashboard">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Logo and Navigation Links -->
+                <div class="logo-container">
+                    <img
+                        src="/dashboard/assets/logo.svg"
+                        alt="first bank logo"
+                    />
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li
+                            onclick="window.location.href='/dashboard'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-1.svg"
+                                    alt="icon-1"
+                                />
+                            </div>
+                            <p>Dashboard</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/prospects'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-2.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Prospects</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/users'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-3.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Users</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/branch'"
+                            class="nav-link active"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-4.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Branch</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/reports'"
+                            class="nav-link"
+                        >
+                            <div class="report-logo">
+                                <img
+                                    src="/dashboard/assets/icon-5.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Reports</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/admin'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-6.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Admin</p>
+                        </li>
+                        <li>
+                            <div
+                                class="nav-search nav-search-sidebar"
+                                style="display: none"
+                            >
+                                <div class="nav-search-icon-container">
+                                    <img
+                                        src="/dashboard/assets/search-icon.svg"
+                                        alt="search icon"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="What are you looking for?"
+                                />
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <!-- Top Navigation Bar -->
+                <div class="top-nav">
+                    <!-- Hamburger Menu  -->
+                    <button class="hamburger-menu">
+                        <img src="/reports/assets/menu.svg" alt="menu icon" />
+                    </button>
+                    <!-- Search bar, user info, etc. -->
+                    <div class="nav-search">
+                        <div class="nav-search-icon-container">
+                            <img
+                                src="/dashboard/assets/search-icon.svg"
+                                alt="search icon"
+                            />
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="What are you looking for?"
+                        />
+                    </div>
+                    <div class="user-info">
+                        <button class="bell-icon-container">
+                            <img
+                                src="/dashboard/assets/bell-icon.svg"
+                                alt="bell icon"
+                            />
+                        </button>
+                        <button class="avatar-container">
+                            <img
+                                src="/dashboard/assets/avatar.svg"
+                                alt="avatar image"
+                            />
+                        </button>
+                        <p class="user-name">TheEndDeen</p>
+                        <button class="arrow-down-container">
+                            <img
+                                src="/dashboard/assets/arrow-down.svg"
+                                alt="arrow down icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content Area (this is the part that changes) -->
+                <div class="content">
+                    <!-- Dynamic content goes here -->
+                    <section
+                        id="individual-section"
+                        class="branches-bulk-upload"
+                    >
+                        <div class="header">
+                            <h1>Create a new Branch</h1>
+                        </div>
+                        <div class="bulk-upload">
+                            <div class="bulk-top">
+                                <p>Select creation type</p>
+                                <p>Cancel</p>
+                            </div>
+                            <div class="upload">
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="content1"
+                                        name="content"
+                                        value="content1"
+                                        checked
+                                    />
+                                    <label for="content1">Individual</label>
+                                </div>
+                                <div>
+                                    <input
+                                        type="radio"
+                                        id="content2"
+                                        name="content"
+                                        value="content2"
+                                    />
+                                    <label for="content2">Bulk upload</label>
+                                </div>
+                            </div>
+                            <form id="branch-form">
+                                <h3>Fill Branch Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="branch-name"
+                                            >Branch Name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="first-name"
+                                            name="first-name"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Address</label>
+                                        <input
+                                            type="text"
+                                            id="address"
+                                            name="address"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="branch-code"
+                                            >Branch Code</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="branch-code"
+                                            name="branch-code"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="state"
+                                                name="state"
+                                                class="state"
+                                            />
+                                            <img
+                                                src="/branch/assets/down.svg"
+                                                alt="down arrow icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="lga">LGA</label>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="lga"
+                                                name="lga"
+                                                class="lga"
+                                            />
+                                            <img
+                                                src="/branch/assets/down.svg"
+                                                alt="down arrow icon"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button>Create Branch</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section
+                        id="bulk-upload-section"
+                        class="branches-bulk-upload"
+                        style="display: none"
+                    >
+                        <div class="bulk-upload">
+                            <div class="download">
+                                <h3>Bulk Upload</h3>
+                                <p>
+                                    Please ensure the file is in excel (.XLS)
+                                    format
+                                </p>
+                            </div>
+                            <div class="upload-files">
+                                <div class="files">
+                                    <div class="image-holder">
+                                        <img
+                                            src="/branch/assets/Ellipse 9.svg"
+                                        />
+                                        <img
+                                            src="/branch/assets/icons8_upload-2.svg"
+                                            id="iconn"
+                                        />
+                                    </div>
+                                    <p id="openFileManager">
+                                        <input
+                                            type="file"
+                                            id="fileInput"
+                                            style="display: none"
+                                        />
+                                        <span id="select"> Select file </span>or
+                                        drag and drop
+                                    </p>
+                                    <p id="csv">CSV or .XLSX file</p>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <img src="/branch/assets/bx_download.svg" />
+                                <button type="button" id="butn">
+                                    Download excel template
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="/scripts.js"></script>
+        <script src="/branch/js/bulky.js"></script>
+    </body>
+</html>
