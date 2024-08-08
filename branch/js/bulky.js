@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (selectedFile) {
             console.log("Selected file:", selectedFile);
             // Navigate to another page after selecting an image
-            window.location.href = "upload.html";
+            window.location.href = "/branch/upload.html";
         }
     });
 });
