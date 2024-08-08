@@ -34,10 +34,10 @@ This project, **Referral-App-Management-Portal-Admin**, is a web-based dashboard
 
 This project was collaboratively developed by the following team members:
 
--   **Agbe Moses** - (Team Lead)
--   **Nafiu Ishaq**
--   **Abraham Ojobo**
--   **Olufunbi Ibrahim**
+-   **Agbe Moses** - maximusagbe@gmail.com (Team Lead)
+-   **Nafiu Ishaq** - nafiuig@gmail.com
+-   **Abraham Ojobo** -
+-   **Olufunbi Ibrahim** - olufunbiibrahim@gmail.com
 -   **Shamsudeen Aliyu**
 
 ## Contributing
