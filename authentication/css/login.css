@@ -180,7 +180,7 @@ body {
 /* Right Side */
 .right-side {
     width: 50%;
-    background: url(./dashboard/assets/right-logo-img.png) var(--primary-color);
+    background: url(/dashboard/assets/right-logo-img.png) var(--primary-color);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
