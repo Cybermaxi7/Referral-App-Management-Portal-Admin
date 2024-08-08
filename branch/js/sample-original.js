@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const createBranch = document.getElementById("myBack");
-    const redirectTo = "index.html"; // Specify the page to redirect to
+    const redirectTo = "/branch/index.html"; // Specify the page to redirect to
 
     createBranch.addEventListener("click", () => {
         window.location.href = redirectTo;

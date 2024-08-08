@@ -32,7 +32,7 @@ switchContent("all");
 
 document.addEventListener("DOMContentLoaded", () => {
     const table = document.getElementById("myTable");
-    const redirectTo = "sample-original.html"; // Specify the page to redirect to
+    const redirectTo = "/branch/sample-original.html"; // Specify the page to redirect to
 
     table.addEventListener("click", () => {
         window.location.href = redirectTo;
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const table = document.getElementById("myTable2");
-    const redirectTo = "sample-original.html"; // Specify the page to redirect to
+    const redirectTo = "/branch/sample-original.html"; // Specify the page to redirect to
 
     table.addEventListener("click", () => {
         window.location.href = redirectTo;
