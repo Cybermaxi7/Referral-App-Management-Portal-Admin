@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+        />
+        <title>Login - Referral Management App</title>
+        <link rel="stylesheet" href="/login.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+        />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/authentication/css/login.css" />
     </head>
     <body>
-        LOGIN
+        <div class="container">
+            <div class="left-side">
+                <img src="/dashboard/assets/Login-logo.png" alt="" />
+                <h1>Referral Management</h1>
+
+                <p>Welcome. Login to your portal account.</p>
+
+                <form id="login-form">
+                    <div class="first-input">
+                        <label for="">Email Address</label>
+                        <i class="fa fa-user"></i>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="enter email address"
+                            required
+                        />
+                    </div>
+                    <div class="second-input">
+                        <div class="label-group">
+                            <label for="id">Password</label>
+                            <button
+                                type="button"
+                                class="show-hide-btn"
+                                onclick="showPassword()"
+                                id="show-password-button"
+                            >
+                                SHOW
+                            </button>
+                        </div>
+                        <i class="fa fa-lock"></i>
+                        <input
+                            type="password"
+                            placeholder="enter your password"
+                            required
+                            id="show-password"
+                        />
+                    </div>
+
+                    <div class="remeber-me">
+                        <div class="check">
+                            <label for="logged-in" class="logged-in">
+                                <input type="checkbox" id="logged-in" /> keep me
+                                logged in
+                            </label>
+                        </div>
+                        <p>
+                            <a
+                                href="/authentication/layouts/resetpassemail.html"
+                                class="resetPassword"
+                                >Reset Password</a
+                            >
+                        </p>
+                        <!-- label-group for remember me and reset password end -->
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        <a href="#">Proceed</a>
+                    </button>
+                </form>
+
+                <p>
+                    Don't have an account?
+                    <a href="/authentication/layouts/signup.html">Sign Up</a>
+                </p>
+            </div>
+
+            <div class="right-side"></div>
+        </div>
+        <script src="/authentication/js/login.js"></script>
     </body>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="users/user.html">LOGIN</a>
+  </body>
+>>>>>>> Stashed changes
 </html>

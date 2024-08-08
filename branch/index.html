@@ -21,6 +21,7 @@
         />
         <link rel="stylesheet" href="/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/branch/css/branch.css" />
     </head>
     <body>
         <div class="dashboard">
@@ -107,6 +108,23 @@
                             </div>
                             <p>Admin</p>
                         </li>
+                        <li>
+                            <div
+                                class="nav-search nav-search-sidebar"
+                                style="display: none"
+                            >
+                                <div class="nav-search-icon-container">
+                                    <img
+                                        src="/dashboard/assets/search-icon.svg"
+                                        alt="search icon"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="What are you looking for?"
+                                />
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </aside>
@@ -115,6 +133,10 @@
             <main class="main-content">
                 <!-- Top Navigation Bar -->
                 <div class="top-nav">
+                    <!-- Hamburger Menu  -->
+                    <button class="hamburger-menu">
+                        <img src="/reports/assets/menu.svg" alt="menu icon" />
+                    </button>
                     <!-- Search bar, user info, etc. -->
                     <div class="nav-search">
                         <div class="nav-search-icon-container">
@@ -154,8 +176,419 @@
                 <!-- Content Area (this is the part that changes) -->
                 <div class="content">
                     <!-- Dynamic content goes here -->
+
+                    <!-- Content for All Page -->
+                    <section class="section-all">
+                        <div class="branches-active">
+                            <div class="header">
+                                <h1>Branches</h1>
+                                <button id="create-branch">
+                                    <img src="/branch/assets/plus.svg" />Create
+                                    Branch
+                                </button>
+                            </div>
+                            <div class="first_search">
+                                <div class="second_search">
+                                    <div class="search">
+                                        <div class="left-search">
+                                            <div class="by">
+                                                <p>Search By Name</p>
+                                                <img
+                                                    src="/branch/assets/down.svg"
+                                                />
+                                            </div>
+                                            <div class="placeholder">
+                                                <img
+                                                    src="/branch/assets/bi_search.svg"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <button>Find</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="semi-menu">
+                                <div class="tabs">
+                                    <button
+                                        id="allButtonPage1"
+                                        class="active-tab active-tab-style"
+                                    >
+                                        All
+                                    </button>
+                                    <button
+                                        id="activeButtonPage1"
+                                        class="all-tab"
+                                    >
+                                        Active
+                                    </button>
+                                    <button class="suspended">Suspended</button>
+                                </div>
+                            </div>
+
+                            <div class="responsive_table">
+                                <div class="tab">
+                                    <table id="myTable">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    Name<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Address<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Branch Manager<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    State<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    LGA<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Date Added<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Action<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Repeat this row as needed -->
+                                            <tr id="table-row-2">
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="myTable2" style="display: none">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    Name<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Address<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Branch Manager<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    State<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    LGA<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Date Added<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Action<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="table-row-2">
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Mask group.jpg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Lagos Branch</td>
+                                                <td>
+                                                    121/123 Funsho Williams Ave
+                                                </td>
+                                                <td>Michael Adesanya</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Content for Active Page -->
                 </div>
             </main>
         </div>
+        <script src="/scripts.js"></script>
+        <script src="/branch/js/branch.js"></script>
     </body>
 </html>

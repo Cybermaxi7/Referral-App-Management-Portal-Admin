@@ -1,0 +1,433 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* user managment css */
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  padding: 1.25rem; /* 20px to rem */
+}
+
+.border {
+  border-bottom: 1px solid #eee;
+}
+
+.users-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+.users-section h1 {
+  margin: 0;
+}
+
+.create-user-btn {
+  background: #002855;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 0.3125rem; /* 5px to rem */
+  cursor: pointer;
+}
+
+.create-user-link {
+  color: #fff;
+}
+
+/* user-search by name section */
+
+.search-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.25rem; /* 20px to rem */
+  border: 0.0625rem solid #ddd; /* 1px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  background-color: #fff; /* White background for search section */
+  padding: 0.625rem; /* 10px to rem */
+}
+
+.search-container {
+  position: relative;
+  width: 90%;
+}
+
+.user-whitebackground {
+  background-color: white;
+  padding: 0.9375rem 0.625rem 0.625rem 0.625rem; /* 15px 10px 10px 10px to rem */
+}
+
+.search-section input {
+  width: 98%;
+  padding: 0.625rem; /* 10px to rem */
+  border: 0.0625rem solid #ddd; /* 1px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  background-color: #fff; /* Ensure white background */
+}
+
+.find-btn {
+  background: #002855;
+  color: #fff;
+  padding: 0.8rem 4rem;
+  border: 0.0625rem solid #ddd; /* 1px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  cursor: pointer;
+}
+
+.tabs-section {
+  display: flex;
+  margin-top: 2.5rem; /* 40px to rem */
+  margin-bottom: 0;
+}
+
+.tab {
+  background-color: #fff;
+  border: 0.0625rem solid #ddd; /* 1px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.tab.all {
+  background-color: white;
+  padding: 1rem 3rem;
+}
+
+.user-activebutton {
+  background: #00b388;
+  padding: 0.625rem 3rem; /* 10px to rem */
+  color: #ffffff;
+  border-radius: 0.3125rem; /* 5px to rem */
+  cursor: pointer;
+  font-size: 0.75rem;
+  border: 0.0625rem solid #ddd; /* 1px to rem */
+}
+
+.user-suspendedbutton {
+  background: #c61531;
+  color: #ffffff;
+  padding: 0.625rem 3rem; /* 10px to rem */
+  border: 0.0625rem solid #ddd; /* 1px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* user table beginning */
+
+.user-table-section {
+  background-color: #fff;
+  padding: 1.25rem; /* 20px to rem */
+  border-radius: 0.3125rem; /* 5px to rem */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+}
+.user-table-dropdown {
+  width: 5%;
+}
+.user-table-dot {
+  width: 30%;
+}
+.user-seyi-icon {
+  width: 10%;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.625rem; /* 10px to rem */
+  font-size: 1rem;
+}
+
+.user-borderleft {
+  border-left: 0.0625rem solid #ddd; /* 1px to rem */
+}
+
+.user-borderright {
+  border-right: 0.0625rem solid #ddd; /* 1px to rem */
+}
+
+th {
+  padding: 0.9375rem; /* 15px to rem */
+  text-align: left;
+  border-bottom: none; /* Remove bottom border for table headers */
+}
+
+td {
+  padding: 0.9375rem; /* 15px to rem */
+  text-align: left;
+  border-bottom: 0.0625rem solid #ddd; /* 1px to rem */
+}
+
+tbody tr td {
+  border-top: 0.0625rem solid #ddd; /* 1px to rem */
+  cursor: pointer;
+}
+
+td i {
+  cursor: pointer;
+}
+
+/* create a new users css */
+
+.user-user-create-container {
+  /* max-width: 68.75rem;  */
+  margin: 3.125rem auto; /* 50px to rem */
+  background-color: #fff;
+  padding: 4.375rem 4.375rem 25rem 4.375rem; /* 70px 70px 400px 70px to rem */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+  border-radius: 0.5rem; /* 8px to rem */
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.user-creation-type-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.user-creation-type-label {
+  font-weight: bold;
+}
+
+.user-cancel-text {
+  color: #002855;
+  cursor: pointer;
+}
+
+.user-creation-type {
+  display: flex;
+  margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+.user-creation-type label {
+  margin-right: 1.25rem; /* 20px to rem */
+}
+
+.user-form-group {
+  margin-bottom: 0.9375rem; /* 15px to rem */
+}
+
+.user-form-group label {
+  display: block;
+  margin-bottom: 0.3125rem; /* 5px to rem */
+}
+
+.user-form-group input,
+.user-form-group select {
+  width: 100%;
+  padding: 0.625rem; /* 10px to rem */
+  border: 0.0625rem solid #ccc; /* 1px to rem */
+  border-radius: 0.625rem; /* 10px to rem */
+}
+
+.user-form-group select {
+  height: 2.5rem; /* 40px to rem */
+}
+
+.user-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-form-row .user-form-group {
+  flex: 0 0 48%;
+}
+
+.user-form-actions {
+  text-align: right;
+}
+
+.user-form-actions button {
+  background-color: #002855;
+  color: white;
+  padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+  border: none;
+  border-radius: 0.25rem; /* 4px to rem */
+  cursor: pointer;
+}
+
+.user-form-actions button:hover {
+  background-color: #004494;
+}
+
+#user-branch {
+  width: 104%;
+}
+
+a {
+  text-decoration: none;
+  color: #002855;
+}
+
+@media screen and (max-width: 63.9375rem) {
+  /* 1023px to rem */
+  .user-form-row {
+    flex-direction: column;
+  }
+
+  .user-form-row .user-form-group {
+    flex: 1 1 100%;
+  }
+}
+
+/* bulk upload css */
+.user-user-bulk-container {
+  /* max-width: 68.75rem;  */
+  margin: 3.125rem auto; /* 50px to rem */
+  background-color: #fff;
+  padding: 4.375rem 4.375rem 25rem 4.375rem; /* 70px 70px 400px 70px to rem */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+  border-radius: 0.5rem; /* 8px to rem */
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem; /* 20px to rem */
+  font-size: 1.5rem; /* 24px to rem */
+  color: #333;
+}
+
+p {
+  color: #afb0b1;
+}
+
+.user-form-container {
+  padding: 1.25rem; /* 20px to rem */
+  background-color: #fff;
+  border-radius: 0.5rem; /* 8px to rem */
+}
+
+.user-creation-type-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+.user-creation-type-label {
+  font-weight: bold;
+}
+
+.user-cancel-text {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #002855;
+}
+
+.user-creation-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+.user-creation-type label {
+  margin-right: 1.25rem; /* 20px to rem */
+}
+
+.user-bulk-upload-info {
+  margin-left: 0.625rem; /* 10px to rem */
+  padding-bottom: 1.25rem; /* 20px to rem */
+  margin-top: 2.5rem; /* 40px to rem */
+}
+
+.user-bulk-upload-section {
+  text-align: center;
+  padding: 1.25rem; /* 20px to rem */
+  border: 0.0625rem solid #eee; /* 1px to rem */
+  background-color: #fff;
+  border-radius: 0.5rem; /* 8px to rem */
+}
+
+.user-file-upload {
+  margin-top: 1.25rem; /* 20px to rem */
+  margin-bottom: 1.25rem; /* 20px to rem */
+  position: relative;
+  cursor: pointer;
+}
+
+.user-file-upload-label {
+  display: inline-block;
+  padding: 1.25rem; /* 20px to rem */
+  border-radius: 0.5rem; /* 8px to rem */
+  cursor: pointer;
+  color: #002855;
+  font-weight: bold;
+  text-align: center;
+}
+
+.user-file-upload-label img {
+  display: block;
+  margin: 0 auto 0.625rem; /* 10px to rem */
+}
+
+.user-file-upload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.user-download-template-btn {
+  background-color: #002855;
+  color: white;
+  padding: 0.8125rem 1.6875rem; /* 13px 27px to rem */
+  border: none;
+  border-radius: 0.25rem; /* 4px to rem */
+  cursor: pointer;
+}
+
+.user-download-template-btn:hover {
+  background-color: #002855;
+}
+
+.user-button-container {
+  margin-top: 6.25rem; /* 100px to rem */
+  padding-left: 28.125rem; /* 450px to rem */
+}
+
+.user-select-file {
+  color: #fdbf6f;
+}
+
+.user-bulk-upload-color {
+  color: #32404f;
+}
+
+@media screen and (max-width: 23.4375rem) {
+  /* 375px to rem */
+  .user-download-template-btn {
+    display: none;
+  }
+}

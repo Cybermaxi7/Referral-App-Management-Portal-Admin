@@ -21,6 +21,7 @@
         />
         <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/dashboard/css/dashboard.css" />
     </head>
     <body>
         <div class="dashboard">
@@ -109,12 +110,45 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="chat-body">
+                    <div class="badge">2+</div>
+                    <a href="#" class="chat-button" id="chatButton">
+                        <img src="./assets/chart-icon.png" alt="" />
+                        <span>Open chat</span>
+                    </a>
+                </div>
+
+                <!-- Chat Modal -->
+                <div id="chatModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Customer Chat</h2>
+                        <div class="chat-container">
+                            <div class="chat-messages">
+                                <!-- Messages will appear here -->
+                            </div>
+                            <div class="chat-input">
+                                <input
+                                    type="text"
+                                    id="messageInput"
+                                    placeholder="Type your message..."
+                                />
+                                <button id="sendMessageButton">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </aside>
 
             <!-- Main Content Area -->
             <main class="main-content">
                 <!-- Top Navigation Bar -->
                 <div class="top-nav">
+                    <!-- Hamburger Menu  -->
+                    <button class="hamburger-menu">
+                        <img src="/reports/assets/menu.svg" alt="menu icon" />
+                    </button>
                     <!-- Search bar, user info, etc. -->
                     <div class="nav-search">
                         <div class="nav-search-icon-container">
@@ -153,9 +187,289 @@
 
                 <!-- Content Area (this is the part that changes) -->
                 <div class="content">
-                    <!-- Dynamic content goes here -->
+                    <div class="welcome-message">
+                        <h2>Welcome, Deens</h2>
+                        <img
+                            src="/dashboard/assets/wabing-hand.svg"
+                            alt="wave hand icon"
+                        />
+                    </div>
+                    <!-- Dashboard Cards Begin-->
+                    <div class="dashboard-cards">
+                        <div class="card-one">
+                            <div class="card-link">
+                                <a href="#">Prospects</a>
+                            </div>
+
+                            <div class="card-text">
+                                <h1>200</h1>
+                            </div>
+                        </div>
+
+                        <div class="card-two">
+                            <div class="card-link">
+                                <a href="#">Users</a>
+                            </div>
+
+                            <div class="card-text">
+                                <h1>150</h1>
+                            </div>
+                        </div>
+
+                        <div class="card-three">
+                            <div class="card-link">
+                                <a href="#">Converted</a>
+                            </div>
+
+                            <div class="card-text">
+                                <h1>150</h1>
+                            </div>
+                        </div>
+
+                        <div class="card-four">
+                            <div class="card-link">
+                                <a href="#">Unonverted</a>
+                            </div>
+
+                            <div class="card-text">
+                                <h1>150</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dashboard Cards End-->
+
+                    <div class="dashboard-card-bottom">
+                        <div class="prospect-card-left">
+                            <div class="prospect-buttons">
+                                <button type="button">View Prospect</button>
+                                <button type="button">View Report</button>
+                                <button type="button">Create Prospect</button>
+                            </div>
+
+                            <div class="prospect-details-card">
+                                <div class="card-top-left">
+                                    <p>Prospect</p>
+                                    <a href="">View All</a>
+                                </div>
+
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Assigned To</th>
+                                            <th>Date Added</th>
+                                            <th class="status pending">
+                                                Status
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Seyi Olarenwaju</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Mohammed Ganiyu</td>
+                                            <td>Ade Ayobami</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>David Jacobs</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status completed">
+                                                Completed
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Seyi Olarenwaju</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status completed">
+                                                Completed
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nurudeen Ibrahim</td>
+                                            <td>Jide Alade</td>
+                                            <td>04 - 01 - 2023</td>
+                                            <td class="status pending">
+                                                Pending
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="prospect-chart-activity-right">
+                            <div class="card-chart-right">
+                                <div class="prospects-conversion">
+                                    <div class="prospect-conversion-heading">
+                                        <h4>Prospect Conversion</h4>
+                                        <button>
+                                            Today
+                                            <img
+                                                src="/reports/assets/arrow-down.svg"
+                                                alt="arrow down icon"
+                                            />
+                                        </button>
+                                    </div>
+                                    <div id="chartContainer">
+                                        <canvas id="myChartt"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-notification-right">
+                                <div class="card-bottom-right">
+                                    <p>Activities</p>
+                                </div>
+                                <div class="activity-body">
+                                    <div class="notification">
+                                        <div class="left-notification">
+                                            <p>
+                                                New User “Adeniyi Sam has been
+                                                created
+                                            </p>
+                                            <span>10 mins</span>
+                                        </div>
+                                        <a href="#">View</a>
+                                    </div>
+
+                                    <div class="notification">
+                                        <div class="left-notification">
+                                            <p>
+                                                New User “Adeniyi Sam has been
+                                                created
+                                            </p>
+                                            <span>10 mins</span>
+                                        </div>
+                                        <a href="#">View</a>
+                                    </div>
+
+                                    <div class="notification">
+                                        <div class="left-notification">
+                                            <p>
+                                                New User “Adeniyi Sam has been
+                                                created
+                                            </p>
+                                            <span>10 mins</span>
+                                        </div>
+                                        <a href="#">View</a>
+                                    </div>
+
+                                    <div class="notification">
+                                        <div class="left-notification">
+                                            <p>
+                                                New User “Adeniyi Sam has been
+                                                created
+                                            </p>
+                                            <span>10 mins</span>
+                                        </div>
+                                        <a href="#">View</a>
+                                    </div>
+
+                                    <div class="notification">
+                                        <div class="left-notification">
+                                            <p>
+                                                New User “Adeniyi Sam has been
+                                                created
+                                            </p>
+                                            <span>10 mins</span>
+                                        </div>
+                                        <a href="#">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <script src="/dashboard/js/dashboard.js"></script>
+        <script src="/scripts.js"></script>
     </body>
 </html>
+
+<script>
+    // Get modal and button elements
+    var chatModal = document.getElementById("chatModal");
+    var chatButton = document.getElementById("chatButton");
+    var closeButton = document.getElementsByClassName("close")[0];
+
+    // Show modal when chat button is clicked
+    chatButton.onclick = function () {
+        chatModal.style.display = "block";
+    };
+
+    // Close modal when close button is clicked
+    closeButton.onclick = function () {
+        chatModal.style.display = "none";
+    };
+
+    // Close modal when clicking outside the modal content
+    window.onclick = function (event) {
+        if (event.target == chatModal) {
+            chatModal.style.display = "none";
+        }
+    };
+</script>

@@ -1,0 +1,181 @@
+img {
+    width: auto !important;
+    height: auto !important;
+}
+
+.header h1 {
+    font-size: 2rem;
+    line-height: 31.62px;
+    font-weight: 700;
+    color: #585858;
+}
+.bulk-upload {
+    background-color: #fff;
+    padding: 0 3rem 4rem;
+}
+.bulk-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bulk-top p {
+    font-size: 1.9rem;
+    line-height: 55.5px;
+    font-weight: 450;
+    color: #34475e;
+}
+
+.upload {
+    display: flex;
+    gap: 2rem;
+}
+.upload div label {
+    color: #34475e;
+    font-size: 1.7rem;
+    font-weight: 450;
+    line-height: 55.5px;
+    margin-left: 1rem;
+}
+.radio-buttons {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form h3 {
+    font-size: 1.8rem;
+    line-height: 27.83px;
+    color: #32404f;
+    font-weight: 500;
+    margin-block: 1rem 3rem;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-group input {
+    border: 1px solid #7f8b94;
+    border-radius: 15px;
+    height: 4.9rem;
+}
+.form-group label {
+    line-height: 20.24px;
+    font-size: 1.4rem;
+    color: #353535;
+}
+.form-group div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #7f8b94;
+    border-radius: 15px;
+}
+.form-group button {
+    width: fit-content;
+    margin-left: auto;
+    height: 4.9rem;
+    margin-top: auto;
+    background-color: #002855;
+    color: #fff;
+    padding: 1.7rem 5.2rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    line-height: 16px;
+
+    font-weight: 500;
+}
+.form-group div img {
+    margin-right: 1rem;
+}
+.lga,
+.state {
+    flex: 1 !important;
+    border: none !important;
+}
+.download {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.download h3 {
+    font-size: 1.8em;
+    line-height: 22.83px;
+    font-weight: 500;
+}
+
+.download p {
+    font-size: 1.4rem;
+    line-height: 22.77px;
+    color: #afb0b1;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.upload-files {
+    width: 100%;
+    margin-top: 2rem;
+    border: 1px solid #00000026;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+}
+
+.image-holder {
+    position: relative;
+}
+.image-holder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.files p {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    line-height: 25.3px;
+    color: #002855;
+    font-weight: 500;
+    text-align: center;
+}
+#select {
+    color: #eab323 !important;
+}
+#csv {
+    font-size: 1.6rem;
+    color: #afb0b1;
+    margin-top: 0;
+}
+.bulk-upload .button {
+    display: flex;
+    gap: 1.2rem;
+    background-color: #002855;
+    width: fit-content;
+    margin: auto;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-block: 7rem;
+}
+
+.bulk-upload .button button {
+    color: inherit;
+    font-size: 1.6rem;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
