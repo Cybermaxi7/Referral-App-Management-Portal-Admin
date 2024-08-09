@@ -281,6 +281,10 @@ div.chat-body {
         }
     }
 }
+
+main {
+    width: 100%;
+}
 /* Main content area styling */
 .main-content {
     margin-left: 29.4rem; /* Offset by the width of the sidebar */
@@ -384,18 +388,6 @@ div.chat-body {
     }
 }
 
-/* Ensure sidebar and top-nav adjust on mobile */
-@media screen and (min-width: 992px) {
-    .main-content {
-        margin-left: 29.4rem; /* Offset by the width of the sidebar */
-    }
-
-    .top-nav {
-        left: 29.4rem; /* Offset by the width of the sidebar */
-        width: calc(100% - 29.4rem); /* Full width minus sidebar width */
-    }
-}
-
 /* Hamburger menu styling */
 .hamburger-menu {
     display: none; /* Hidden by default */
@@ -430,5 +422,16 @@ div.chat-body {
     }
     .nav-search-sidebar {
         display: flex !important;
+    }
+}
+/* Ensure sidebar and top-nav adjust on mobile */
+@media screen and (min-width: 991px) {
+    .main-content {
+        margin-left: 29.4rem; /* Offset by the width of the sidebar */
+    }
+
+    .top-nav {
+        left: 29.4rem; /* Offset by the width of the sidebar */
+        width: calc(100% - 29.4rem); /* Full width minus sidebar width */
     }
 }
