@@ -354,8 +354,16 @@ form h2 {
         height: 3rem;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .settings-container {
-        grid-template-columns: 15rem auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 22rem auto;
+    }
+    .left-container {
+        /* height: fit-content; */
+    }
+    .left-container-inner {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 2rem;
     }
 }
