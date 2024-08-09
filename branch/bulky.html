@@ -186,7 +186,7 @@
                         <div class="bulk-upload">
                             <div class="bulk-top">
                                 <p>Select creation type</p>
-                                <p>Cancel</p>
+                                <p id="myCancel">Cancel</p>
                             </div>
                             <div class="upload">
                                 <div>
@@ -275,8 +275,20 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button>Create Branch</button>
+                                        <button id="openModalBtn">Create Branch</button>
+                                        
                                     </div>
+
+                                    <div id="myModal" class="modal" style="display: none;">
+                                        <div class="modal-content">
+                                            <h2>Branch has been created <br> successfully</h2>
+                                            <div class="modal-image">
+                                                <img src="/branch/assets/lf20_od54tgs3.json].svg">
+                                            </div>
+                                            <button id="closeModalBtn" class="close-btn">Close</button>
+                                        </div>
+                                    </div>
+                            
                                 </div>
                             </form>
                         </div>
@@ -322,6 +334,8 @@
                                 <button type="button" id="butn">
                                     Download excel template
                                 </button>
+
+                                
                             </div>
                         </div>
                     </section>
