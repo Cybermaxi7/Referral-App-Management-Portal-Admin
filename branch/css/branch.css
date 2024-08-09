@@ -29,7 +29,7 @@ img {
     background-color: #112b4e;
     color: white;
     border: none;
-    border-radius: 0.1rem; 
+    border-radius: 0.1rem;
     cursor: pointer;
     font-size: 0.6rem;
     margin-right: 0.1rem;
@@ -150,7 +150,6 @@ img {
     color: #002855 !important;
     border-bottom: 4px solid #002855 !important;
     margin-bottom: 1rem !important;
-  
 }
 
 .content {
@@ -297,15 +296,22 @@ tbody td:last-child {
 }
 
 @media (max-width: 768px) {
+    .search {
+        flex-direction: column;
+        gap: 2rem !important;
+    }
+    .search button {
+        align-self: flex-end !important;
+        height: 5rem;
+    }
     .branches-active .search .by p {
-        font-size: 0.5rem;
+        white-space: nowrap;
     }
-    .branches-active .first_search .search button {
-        width: 4rem;
-        height: 2rem;
-        text-align: center;
-        background-color: #112b4e;
+    .branches-active .by {
+        width: 23rem;
+        gap: 1rem;
     }
+
     hr {
         margin: 0px;
         width: 100%;
@@ -317,32 +323,12 @@ tbody td:last-child {
 }
 
 @media (max-width: 425px) {
-    .branches-active .header h1 {
-        font-size: 0.8rem;
-    }
-    .branches-active .header button {
-        font-size: 0.5rem;
-    }
-    .branches-active .first_search .search button {
-        padding: 0.5rem 2.4rem;
-        font-size: 0.5rem;
-    }
-    .branches-active .first_search .placeholder {
-        width: 75%;
-    }
-    .branches-active .first_search .placeholder img {
-        margin-top: 10px;
-    }
-    .branches-active .first_search .placeholder input {
-        margin-left: 0.5rem;
-        width: 70%;
-    }
-
     table tr td {
         font-size: 10px;
     }
     table tr th {
         font-size: 10px;
+        white-space: nowrap;
     }
     tbody td {
         border-top: 1px solid #ddd;
@@ -352,12 +338,14 @@ tbody td:last-child {
         padding: 5px;
         color: #353535;
     }
+    .by {
+        width: 100% !important ;
+    }
+    .left-search {
+        flex-direction: column;
+    }
 }
 @media (max-width: 320px) {
-    .branches-active .first_search .search button {
-        padding: 0.5rem 1rem;
-        font-size: 0.5rem;
-    }
     tbody td {
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;

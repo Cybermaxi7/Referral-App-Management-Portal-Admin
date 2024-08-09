@@ -1,83 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prospects - Referral App Management Portal</title>
-    <link rel="canonical" href="https://www.firstbanknigeria.com/" />
-    <link
-      rel="icon"
-      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
-      sizes="192x192"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
-    />
-    <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/users/css/users.css" />
-  
-  </head>
-  <body>
-    <div class="dashboard">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <!-- Logo and Navigation Links -->
-        <div class="logo-container">
-          <img src="/dashboard/assets/logo.svg" alt="first bank logo" />
-        </div>
-        <nav class="navigation">
-          <ul>
-            <li onclick="window.location.href='/dashboard'" class="nav-link">
-              <div>
-                <img src="/dashboard/assets/icon-1.svg" alt="icon-1" />
-              </div>
-              <p>Dashboard</p>
-            </li>
-            <li onclick="window.location.href='/prospects'" class="nav-link">
-              <div>
-                <img src="/dashboard/assets/icon-2.svg" alt="" />
-              </div>
-              <p>Prospects</p>
-            </li>
-            <li onclick="window.location.href='/users'" class="nav-link active">
-              <div>
-                <img src="/dashboard/assets/icon-3.svg" alt="" />
-              </div>
-              <p>Users</p>
-            </li>
-            <li onclick="window.location.href='/branch'" class="nav-link">
-              <div>
-                <img src="/dashboard/assets/icon-4.svg" alt="" />
-              </div>
-              <p>Branch</p>
-            </li>
-            <li onclick="window.location.href='/reports'" class="nav-link">
-              <div class="report-logo">
-                <img src="/dashboard/assets/icon-5.svg" alt="" />
-              </div>
-              <p>Reports</p>
-            </li>
-            <li onclick="window.location.href='/admin'" class="nav-link">
-              <div>
-                <img src="/dashboard/assets/icon-6.svg" alt="" />
-              </div>
-              <p>Admin</p>
-            </li>
-          </ul>
-        </nav>
-      </aside>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Users - Referral App Management Portal</title>
-
         <link rel="canonical" href="https://www.firstbanknigeria.com/" />
         <link
             rel="icon"
@@ -95,7 +21,9 @@
         />
         <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/users/css/users.css" />
     </head>
+
     <body>
         <div class="dashboard">
             <!-- Sidebar -->
@@ -247,302 +175,258 @@
                     </div>
                 </div>
 
-        <!-- Content Area (this is the part that changes) -->
-        <div class="content">
-          <!-- Dynamic content goes here -->
-          <section class="users-section">
-            <h1>Users</h1>
-            <button class="create-user-btn" id="create-user-btn">
-              <a class="create-user-link" href="javascript:void(0)"
-                >+ Create User</a
-              >
-            </button>
-          </section>
-          <!-- user-search container -->
-          <section class="user-whitebackground">
-            <section class="search-section">
-              <div class="search-container">
-                <input type="text" placeholder="Search By: Name" />
-              </div>
-              <button class="find-btn">Find</button>
-              <!-- <a href="usersprofile.html">userprofile</a> -->
-            </section>
-          </section>
-          <section class="tabs-section">
-            <button class="tab all" id="all-btn">All</button>
-            <button class="user-activebutton" id="active-btn">Active</button>
-            <button class="user-suspendedbutton" id="suspended-btn">
-              Suspended
-            </button>
-          </section>
+                <!-- Content Area (this is the part that changes) -->
+                <div class="content">
+                    <!-- Dynamic content goes here -->
+                    <section class="users-section">
+                        <h1>Users</h1>
+                        <button class="create-user-btn" id="create-user-btn">
+                            <a
+                                class="create-user-link"
+                                href="javascript:void(0)"
+                                >+ Create User</a
+                            >
+                        </button>
+                    </section>
+                    <!-- user-search container -->
+                    <section class="user-whitebackground">
+                        <section class="search-section">
+                            <div class="search-container">
+                                <input
+                                    type="text"
+                                    placeholder="Search By: Name"
+                                    id="search-input"
+                                />
+                            </div>
+                            <button class="find-btn" id="find-btn">Find</button>
+                            <!-- <a href="usersprofile.html">userprofile</a> -->
+                        </section>
+                    </section>
 
-          <!-- user-table -->
-          <section class="user-table-section">
-            <table class="user-list">
-              <thead>
-                <tr>
-                  <th>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
-                    <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                  <th>
-                    Email <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                  <th>
-                    Phone Number
-                    <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                  <th>
-                    Branch <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                  <th>
-                    Prospect <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                  <th>
-                    Date Added
-                    <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                  <th>
-                    Action <img class="user-table-dropdown" src="/dashboard/assets/table head dropdown.svg" alt="" />
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="user-borderleft">
-                    <img class="user-seyi-icon"
-                      src="/dashboard/assets/seyi .svg"
-                      alt=""
-                    />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img class="user-table-dot" src="/dashboard/assets/three black dot.svg" alt="" />
-                  </td>
-                </tr>
+                    <section class="tabs-section">
+                        <button class="tab all" id="all-btn">All</button>
+                        <button class="user-activebutton" id="active-btn">
+                            Active
+                        </button>
+                        <button class="user-suspendedbutton" id="suspended-btn">
+                            Suspended
+                        </button>
+                    </section>
 
-                <tr>
-                  <td class="user-borderleft">
-                    <img class="user-seyi-icon"
-                      src="/dashboard/assets/seyi .svg"
-                      alt=""
-                    />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                  </td>
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img class="user-table-dot" src="/dashboard/assets/three black dot.svg" alt="" />
-                  </td>
-                </tr>
-                <tr>
-                  <td class="user-borderleft">
-                    <img class="user-seyi-icon"
-                      src="/dashboard/assets/seyi .svg"
-                      alt=""
-                    />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img class="user-table-dot" src="/dashboard/assets/three black dot.svg" alt="" />
-                  </td>
-                </tr>
+                    <!-- user-table -->
+                    <section class="user-table-section">
+                        <table class="user-list">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        Email
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        Phone Number
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        Branch
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        Prospect
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        Date Added
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        Action
+                                        <img
+                                            class="user-table-dropdown"
+                                            src="/dashboard/assets/table head dropdown.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="user-borderleft">
+                                        <img
+                                            class="user-seyi-icon"
+                                            src="/dashboard/assets/seyi .svg"
+                                            alt=""
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Seyi Olanrewaju
+                                    </td>
+                                    <td>seyi@lwl@gmail.com</td>
+                                    <td>08965476453</td>
+                                    <td>Lagos Branch</td>
+                                    <td>05</td>
+                                    <td>01 Jan 2023</td>
+                                    <td class="user-borderright">
+                                        <img
+                                            class="user-table-dot"
+                                            src="/dashboard/assets/three black dot.svg"
+                                            alt=""
+                                        />
+                                    </td>
+                                </tr>
 
-                <tr>
-                  <td class="user-borderleft">
-                    <img class="user-seyi-icon"
-                    src="/dashboard/assets/seyi .svg"
-                    alt=""
-                  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img class="user-table-dot" src="/dashboard/assets/three black dot.svg" alt="" />
-                  </td>
-                </tr>
+                                <tr>
+                                    <td class="user-borderleft">
+                                        <img
+                                            class="user-seyi-icon"
+                                            src="/dashboard/assets/seyi .svg"
+                                            alt=""
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Seyi Olanrewaju
+                                    </td>
+                                    <td>seyi@lwl@gmail.com</td>
+                                    <td>08965476453</td>
+                                    <td>Lagos Branch</td>
+                                    <td>05</td>
+                                    <td>01 Jan 2023</td>
+                                    <td class="user-borderright">
+                                        <img
+                                            class="user-table-dot"
+                                            src="/dashboard/assets/three black dot.svg"
+                                            alt=""
+                                        />
+                                    </td>
+                                </tr>
 
-                <tr>
-                  <td class="user-borderleft">
-                    <img class="user-seyi-icon"
-                    src="/dashboard/assets/seyi .svg"
-                    alt=""
-                  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                </td>
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img class="user-table-dot" src="/dashboard/assets/three black dot.svg" alt="" />
-                  </td>
-                </tr>
+                                <tr>
+                                    <td class="user-borderleft">
+                                        <img
+                                            class="user-seyi-icon"
+                                            src="/dashboard/assets/seyi .svg"
+                                            alt=""
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Seyi Olanrewaju
+                                    </td>
+                                    <td>seyi@lwl@gmail.com</td>
+                                    <td>08965476453</td>
+                                    <td>Lagos Branch</td>
+                                    <td>05</td>
+                                    <td>01 Jan 2023</td>
+                                    <td class="user-borderright">
+                                        <img
+                                            class="user-table-dot"
+                                            src="/dashboard/assets/three black dot.svg"
+                                            alt=""
+                                        />
+                                    </td>
+                                </tr>
 
-                <tr>
-                  <td class="user-borderleft">
-                    <img class="user-seyi-icon"
-                    src="/dashboard/assets/seyi .svg"
-                    alt=""
-                  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                </td>
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img class="user-table-dot" src="/dashboard/assets/three black dot.svg" alt="" />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                                <tr>
+                                    <td class="user-borderleft">
+                                        <img
+                                            class="user-seyi-icon"
+                                            src="/dashboard/assets/seyi .svg"
+                                            alt=""
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Seyi Olanrewaju
+                                    </td>
+                                    <td>seyi@lwl@gmail.com</td>
+                                    <td>08965476453</td>
+                                    <td>Lagos Branch</td>
+                                    <td>05</td>
+                                    <td>01 Jan 2023</td>
+                                    <td class="user-borderright">
+                                        <img
+                                            class="user-table-dot"
+                                            src="/dashboard/assets/three black dot.svg"
+                                            alt=""
+                                        />
+                                    </td>
+                                </tr>
 
-          </section>
+                                <tr>
+                                    <td class="user-borderleft">
+                                        <img
+                                            class="user-seyi-icon"
+                                            src="/dashboard/assets/seyi .svg"
+                                            alt=""
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Seyi Olanrewaju
+                                    </td>
+                                    <td>seyi@lwl@gmail.com</td>
+                                    <td>08965476453</td>
+                                    <td>Lagos Branch</td>
+                                    <td>05</td>
+                                    <td>01 Jan 2023</td>
+                                    <td class="user-borderright">
+                                        <img
+                                            class="user-table-dot"
+                                            src="/dashboard/assets/three black dot.svg"
+                                            alt=""
+                                        />
+                                    </td>
+                                </tr>
 
-          <!-- create user section -->
-
-          <div class="user-user-create-container">
-            <h2>Create a New User</h2>
-            <div class="user-creation-type-container">
-              <span class="user-creation-type-label">Select Creation Type</span>
-              <span class="user-cancel-text"><a href="index.html">Cancel</a></span>
-            </div>
-            <div class="user-creation-type">
-              <label>
-                <input
-                  type="radio"
-                  name="creation-type"
-                  id="user-individual-radio"
-                  value="individual"
-                  checked
-                />
-                Individual
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  name="creation-type"
-                  value="bulk-upload"
-                  id="user-bulk-upload-radio"
-                />
-                Bulk Upload
-              </label>
-            </div>
-            <form>
-              <h3>Fill User Information</h3>
-              <div class="user-form-row">
-                <div class="user-form-group">
-                  <label for="user-first-name">First Name</label>
-                  <input type="text" id="user-first-name" name="first-name" />
+                                <tr>
+                                    <td class="user-borderleft">
+                                        <img
+                                            class="user-seyi-icon"
+                                            src="/dashboard/assets/seyi .svg"
+                                            alt=""
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Seyi Olanrewaju
+                                    </td>
+                                    <td>seyi@lwl@gmail.com</td>
+                                    <td>08965476453</td>
+                                    <td>Lagos Branch</td>
+                                    <td>05</td>
+                                    <td>01 Jan 2023</td>
+                                    <td class="user-borderright">
+                                        <img
+                                            class="user-table-dot"
+                                            src="/dashboard/assets/three black dot.svg"
+                                            alt=""
+                                        />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
                 </div>
-                <div class="user-form-group">
-                  <label for="user-last-name">Last Name</label>
-                  <input type="text" id="user-last-name" name="last-name" />
-                </div>
-              </div>
-              <div class="user-form-row">
-                <div class="user-form-group">
-                  <label for="user-branch">Select Branch</label>
-                  <select id="user-branch" name="branch">
-                    <option value="branch1">Branch 1</option>
-                    <option value="branch2">Branch 2</option>
-                    <!-- Add more options as needed -->
-                  </select>
-                </div>
-                <div class="user-form-group">
-                  <label for="user-email">Email</label>
-                  <input type="email" id="user-email" name="email" />
-                </div>
-              </div>
-              <div class="user-form-row">
-                <div class="user-form-group">
-                  <label for="user-phone-number">Phone Number</label>
-                  <input type="tel" id="user-phone-number" name="phone-number" />
-                </div>
-              </div>
-              <div class="user-form-actions">
-                <button type="submit">Create User</button>
-              </div>
-            </form>
-          </div>
-          
-          
-            <!-- bulk-upload section -->
-            <div class="user-user-bulk-container">
-              <h2>Create a New User</h2>
-              <div class="user-form-container">
-                <form>
-                  <div class="user-creation-type-container">
-                    <span class="user-creation-type-label">Select creation type</span>
-                    <span class="user-cancel-text"><a href="index.html">Cancel</a></span>
-                  </div>
-                  <div class="user-creation-type">
-                    <label>
-                      <input
-                        type="radio"
-                        id="user-individual-radio"
-                        name="creation-type"
-                        value="individual"
-                      />
-                      Individual
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        name="creation-type"
-                        value="bulk-upload"
-                        checked
-                      />
-                      Bulk Upload
-                    </label>
-                  </div>
-                  <div class="user-bulk-upload-info">
-                    <h3 class="user-bulk-upload-color">Bulk Upload</h3>
-                    <p>Please ensure the file is in excel (.XLS) format</p>
-                  </div>
-                  <div class="user-bulk-upload-section">
-                    <div class="user-file-upload">
-                      <label for="user-file-upload" class="user-file-upload-label">
-                        <img src="icons/upload icon.svg" alt="Upload Icon" />
-                        <span class="user-select-file">Select file</span> or drag and drop
-                        <br />
-                        CSV or .XLSX file
-                      </label>
-                      <input type="file" id="user-file-upload" />
-                    </div>
-                  </div>
-                  <div class="user-button-container">
-                    <button class="user-download-template-btn">
-                      Download excel template
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            
-          
-         
+            </main>
         </div>
         <script src="/scripts.js"></script>
-      </main>
-    </div>
-    <script src="/users/js/users.js"></script>
-  </body>
+        <script src="/users/js/users.js"></script>
+    </body>
 </html>

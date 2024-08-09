@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ticks: {
                         stepSize: 500,
                         font: {
-                            size: 12, // Font size for y-axis labels
+                            size: 11, // Font size for y-axis labels
                             family: "Circular Std", // Font family for y-axis labels
                             weight: 450, // Font weight for y-axis labels
                         },
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 x: {
                     ticks: {
                         font: {
-                            size: 12, // Font size for x-axis labels
+                            size: 11, // Font size for x-axis labels
                             family: "Circular Std", // Font family for x-axis labels
                             weight: 450, // Font weight for x-axis labels
                         },

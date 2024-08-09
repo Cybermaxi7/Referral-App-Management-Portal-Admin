@@ -1,433 +1,483 @@
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* user managment css */
-body {
-  font-family: "Mulish", sans-serif;
-  background-color: #f5f6fa;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
 .user-info {
-  display: flex;
-  align-items: center;
-}
-
-.main-content {
-  padding: 1.25rem; /* 20px to rem */
+    display: flex;
+    align-items: center;
 }
 
 .border {
-  border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .users-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem; /* 20px to rem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 .users-section h1 {
-  margin: 0;
+    margin: 0;
+    font-size: 2.4rem;
+    color: #353535;
 }
 
 .create-user-btn {
-  background: #002855;
-  color: #fff;
-  padding: 0.8rem 3rem;
-  border: none;
-  border-radius: 0.3125rem; /* 5px to rem */
-  cursor: pointer;
+    background: #002855;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0.3125rem; /* 5px to rem */
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .create-user-link {
-  color: #fff;
+    color: #fff;
 }
 
 /* user-search by name section */
 
 .search-section {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 1.25rem; /* 20px to rem */
-  border: 0.0625rem solid #ddd; /* 1px to rem */
-  border-radius: 0.3125rem; /* 5px to rem */
-  background-color: #fff; /* White background for search section */
-  padding: 0.625rem; /* 10px to rem */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 0.0625rem solid #ddd; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    background-color: #fff; /* White background for search section */
+    padding: 1.2rem; /* 10px to rem */
 }
 
 .search-container {
-  position: relative;
-  width: 90%;
+    position: relative;
+    width: 90%;
 }
 
 .user-whitebackground {
-  background-color: white;
-  padding: 0.9375rem 0.625rem 0.625rem 0.625rem; /* 15px 10px 10px 10px to rem */
+    background-color: white;
+    padding: 1.2rem;
 }
 
 .search-section input {
-  width: 98%;
-  padding: 0.625rem; /* 10px to rem */
-  border: 0.0625rem solid #ddd; /* 1px to rem */
-  border-radius: 0.3125rem; /* 5px to rem */
-  background-color: #fff; /* Ensure white background */
+    width: 98%;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border: 0.0625rem solid #ddd; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    background-color: #fff; /* Ensure white background */
 }
 
 .find-btn {
-  background: #002855;
-  color: #fff;
-  padding: 0.8rem 4rem;
-  border: 0.0625rem solid #ddd; /* 1px to rem */
-  border-radius: 0.3125rem; /* 5px to rem */
-  cursor: pointer;
+    background: #002855;
+    color: #fff;
+    padding: 1rem 5rem;
+    border: 0.0625rem solid #ddd; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 700;
+    height: 100%;
 }
 
 .tabs-section {
-  display: flex;
-  margin-top: 2.5rem; /* 40px to rem */
-  margin-bottom: 0;
+    display: flex;
+    margin-top: 2.5rem; /* 40px to rem */
+    margin-bottom: 0;
 }
 
 .tab {
-  background-color: #fff;
-  border: 0.0625rem solid #ddd; /* 1px to rem */
-  border-radius: 0.3125rem; /* 5px to rem */
-  cursor: pointer;
-  font-size: 0.75rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    cursor: pointer;
+    font-size: 1.6rem;
 }
 
 .tab.all {
-  background-color: white;
-  padding: 1rem 3rem;
+    background-color: white;
+    padding: 1rem 3rem;
 }
 
 .user-activebutton {
-  background: #00b388;
-  padding: 0.625rem 3rem; /* 10px to rem */
-  color: #ffffff;
-  border-radius: 0.3125rem; /* 5px to rem */
-  cursor: pointer;
-  font-size: 0.75rem;
-  border: 0.0625rem solid #ddd; /* 1px to rem */
+    background: #00b388;
+    padding: 0.625rem 3rem; /* 10px to rem */
+    color: #ffffff;
+    border-radius: 0.3125rem; /* 5px to rem */
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: 0.0625rem solid #ddd; /* 1px to rem */
 }
 
 .user-suspendedbutton {
-  background: #c61531;
-  color: #ffffff;
-  padding: 0.625rem 3rem; /* 10px to rem */
-  border: 0.0625rem solid #ddd; /* 1px to rem */
-  border-radius: 0.3125rem; /* 5px to rem */
-  cursor: pointer;
-  font-size: 0.75rem;
+    background: #c61531;
+    color: #ffffff;
+    padding: 0.625rem 3rem; /* 10px to rem */
+    border: 0.0625rem solid #ddd; /* 1px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    cursor: pointer;
+    font-size: 1.6rem;
 }
 
 a {
-  text-decoration: none;
-  color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* user table beginning */
 
 .user-table-section {
-  background-color: #fff;
-  padding: 1.25rem; /* 20px to rem */
-  border-radius: 0.3125rem; /* 5px to rem */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+    background-color: #fff;
+    padding: 1.25rem; /* 20px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+    overflow-x: auto;
+    width: 100%;
 }
 .user-table-dropdown {
-  width: 5%;
+    width: 0.6rem;
 }
 .user-table-dot {
-  width: 30%;
+    width: 30%;
 }
 .user-seyi-icon {
-  width: 10%;
+    width: 10%;
 }
 
 table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 0.625rem; /* 10px to rem */
-  font-size: 1rem;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.625rem; /* 10px to rem */
+    font-size: 1rem;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .user-borderleft {
-  border-left: 0.0625rem solid #ddd; /* 1px to rem */
+    border-left: 0.0625rem solid #ddd; /* 1px to rem */
 }
 
 .user-borderright {
-  border-right: 0.0625rem solid #ddd; /* 1px to rem */
+    border-right: 0.0625rem solid #ddd; /* 1px to rem */
 }
 
 th {
-  padding: 0.9375rem; /* 15px to rem */
-  text-align: left;
-  border-bottom: none; /* Remove bottom border for table headers */
+    padding: 0.9375rem; /* 15px to rem */
+    text-align: left;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    align-items: center;
+    color: #7f8b94;
+    border-bottom: none; /* Remove bottom border for table headers */
 }
 
 td {
-  padding: 0.9375rem; /* 15px to rem */
-  text-align: left;
-  border-bottom: 0.0625rem solid #ddd; /* 1px to rem */
+    padding: 0.9375rem; /* 15px to rem */
+    text-align: left;
+    border-bottom: 0.0625rem solid #ddd; /* 1px to rem */
+    color: #353535;
+    font-weight: 450;
+    white-space: nowrap;
 }
 
 tbody tr td {
-  border-top: 0.0625rem solid #ddd; /* 1px to rem */
-  cursor: pointer;
+    border-top: 0.0625rem solid #ddd; /* 1px to rem */
+    cursor: pointer;
 }
 
 td i {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* create a new users css */
 
 .user-user-create-container {
-  /* max-width: 68.75rem;  */
-  margin: 3.125rem auto; /* 50px to rem */
-  background-color: #fff;
-  padding: 4.375rem 4.375rem 25rem 4.375rem; /* 70px 70px 400px 70px to rem */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
-  border-radius: 0.5rem; /* 8px to rem */
+    /* max-width: 68.75rem;  */
+    margin: 3.125rem auto; /* 50px to rem */
+    background-color: #fff;
+    padding: 4.375rem 4.375rem 25rem 4.375rem; /* 70px 70px 400px 70px to rem */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+    border-radius: 0.5rem; /* 8px to rem */
 }
 
 h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .user-creation-type-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
-
-.user-creation-type-label {
-  font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
 }
 
 .user-cancel-text {
-  color: #002855;
-  cursor: pointer;
+    color: #002855;
+    cursor: pointer;
 }
 
 .user-creation-type {
-  display: flex;
-  margin-bottom: 1.25rem; /* 20px to rem */
+    display: flex;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 .user-creation-type label {
-  margin-right: 1.25rem; /* 20px to rem */
+    margin-right: 1.25rem; /* 20px to rem */
 }
 
 .user-form-group {
-  margin-bottom: 0.9375rem; /* 15px to rem */
+    margin-bottom: 0.9375rem; /* 15px to rem */
 }
 
 .user-form-group label {
-  display: block;
-  margin-bottom: 0.3125rem; /* 5px to rem */
+    display: block;
+    margin-bottom: 0.5rem; /* 5px to rem */
+    font-size: 1.6rem;
+    color: #353535;
 }
 
 .user-form-group input,
 .user-form-group select {
-  width: 100%;
-  padding: 0.625rem; /* 10px to rem */
-  border: 0.0625rem solid #ccc; /* 1px to rem */
-  border-radius: 0.625rem; /* 10px to rem */
-}
-
-.user-form-group select {
-  height: 2.5rem; /* 40px to rem */
+    width: 100%;
+    padding: 0.625rem; /* 10px to rem */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
+    border-radius: 0.625rem; /* 10px to rem */
+    height: 5.6rem;
+    font-size: 1.6rem;
 }
 
 .user-form-row {
-  display: flex;
-  justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 1rem;
 }
 
 .user-form-row .user-form-group {
-  flex: 0 0 48%;
+    flex: 0 0 48%;
 }
 
 .user-form-actions {
-  text-align: right;
+    text-align: right;
 }
 
 .user-form-actions button {
-  background-color: #002855;
-  color: white;
-  padding: 0.625rem 1.25rem; /* 10px 20px to rem */
-  border: none;
-  border-radius: 0.25rem; /* 4px to rem */
-  cursor: pointer;
+    background-color: #002855;
+    color: white;
+    padding: 1.2rem 4.2rem; /* 10px 20px to rem */
+    border: none;
+    border-radius: 0.25rem; /* 4px to rem */
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 20px;
 }
 
 .user-form-actions button:hover {
-  background-color: #004494;
-}
-
-#user-branch {
-  width: 104%;
+    background-color: #004494;
 }
 
 a {
-  text-decoration: none;
-  color: #002855;
+    text-decoration: none;
+    color: #002855;
 }
 
-@media screen and (max-width: 63.9375rem) {
-  /* 1023px to rem */
-  .user-form-row {
-    flex-direction: column;
-  }
+@media screen and (max-width: 1024px) {
+    /* 1023px to rem */
+    .user-form-row {
+        flex-direction: column;
+    }
 
-  .user-form-row .user-form-group {
-    flex: 1 1 100%;
-  }
+    .user-form-row .user-form-group {
+        flex: 1 1 100%;
+    }
 }
 
 /* bulk upload css */
 .user-user-bulk-container {
-  /* max-width: 68.75rem;  */
-  margin: 3.125rem auto; /* 50px to rem */
-  background-color: #fff;
-  padding: 4.375rem 4.375rem 25rem 4.375rem; /* 70px 70px 400px 70px to rem */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
-  border-radius: 0.5rem; /* 8px to rem */
+    /* max-width: 68.75rem;  */
+    margin: 3.125rem auto; /* 50px to rem */
+    background-color: #fff;
+    padding: 4.375rem 4.375rem 25rem 4.375rem; /* 70px 70px 400px 70px to rem */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px to rem */
+    border-radius: 0.5rem; /* 8px to rem */
 }
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 1.25rem; /* 20px to rem */
-  font-size: 1.5rem; /* 24px to rem */
-  color: #333;
-}
-
-p {
-  color: #afb0b1;
+    margin-top: 0;
+    margin-bottom: 1.25rem; /* 20px to rem */
+    font-size: 2.5rem; /* 24px to rem */
+    color: #585858;
 }
 
 .user-form-container {
-  padding: 1.25rem; /* 20px to rem */
-  background-color: #fff;
-  border-radius: 0.5rem; /* 8px to rem */
+    padding: 1.25rem; /* 20px to rem */
+    background-color: #fff;
+    border-radius: 0.5rem; /* 8px to rem */
 }
 
 .user-creation-type-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem; /* 20px to rem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 .user-creation-type-label {
-  font-weight: bold;
+    font-weight: 450;
+    font-size: 2.2rem;
+    line-height: 55.5px;
+    color: #34475e;
 }
 
 .user-cancel-text {
-  cursor: pointer;
+    cursor: pointer;
+    color: #002855;
+    font-size: 2rem;
+    line-height: 25.3px;
 }
 
 a {
-  text-decoration: none;
-  color: #002855;
+    text-decoration: none;
+    color: #002855;
 }
 
 .user-creation-type {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.25rem; /* 20px to rem */
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem; /* 20px to rem */
 }
 
 .user-creation-type label {
-  margin-right: 1.25rem; /* 20px to rem */
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #34475e;
+    line-height: 55.5px;
+    font-size: 2rem;
+}
+
+form h3 {
+    line-height: 27.83px;
+    font-size: 2.2rem;
+    color: #32404f;
+    font-weight: 500;
+    margin-bottom: 3rem;
 }
 
 .user-bulk-upload-info {
-  margin-left: 0.625rem; /* 10px to rem */
-  padding-bottom: 1.25rem; /* 20px to rem */
-  margin-top: 2.5rem; /* 40px to rem */
+    margin-left: 0.625rem; /* 10px to rem */
+    padding-bottom: 1.25rem; /* 20px to rem */
+    margin-top: 2.5rem; /* 40px to rem */
+}
+.user-bulk-upload-info p {
+    font-size: 1.8rem;
+    line-height: 22.7px;
+    color: #afb0b1;
+    font-weight: 450;
 }
 
 .user-bulk-upload-section {
-  text-align: center;
-  padding: 1.25rem; /* 20px to rem */
-  border: 0.0625rem solid #eee; /* 1px to rem */
-  background-color: #fff;
-  border-radius: 0.5rem; /* 8px to rem */
+    text-align: center;
+    padding: 1.25rem; /* 20px to rem */
+    border: 0.0625rem solid #eee; /* 1px to rem */
+    background-color: #fff;
+    border-radius: 0.5rem; /* 8px to rem */
 }
 
 .user-file-upload {
-  margin-top: 1.25rem; /* 20px to rem */
-  margin-bottom: 1.25rem; /* 20px to rem */
-  position: relative;
-  cursor: pointer;
+    margin-top: 1.25rem; /* 20px to rem */
+    margin-bottom: 1.25rem; /* 20px to rem */
+    position: relative;
+    cursor: pointer;
 }
 
 .user-file-upload-label {
-  display: inline-block;
-  padding: 1.25rem; /* 20px to rem */
-  border-radius: 0.5rem; /* 8px to rem */
-  cursor: pointer;
-  color: #002855;
-  font-weight: bold;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.25rem; /* 20px to rem */
+    border-radius: 0.5rem; /* 8px to rem */
+    cursor: pointer;
+    color: #002855;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.2rem;
 }
-
+.p-upload {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 2rem;
+    color: #002855;
+    align-items: center;
+}
+.csv {
+    font-size: 1.6rem;
+    margin-block: 1rem;
+    color: #afb0b1;
+}
+.upload-icon-container {
+    width: 5rem;
+    height: 5rem;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 1rem;
+}
 .user-file-upload-label img {
-  display: block;
-  margin: 0 auto 0.625rem; /* 10px to rem */
+    display: block;
+    margin: 0 auto 0.625rem; /* 10px to rem */
 }
 
 .user-file-upload input[type="file"] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .user-download-template-btn {
-  background-color: #002855;
-  color: white;
-  padding: 0.8125rem 1.6875rem; /* 13px 27px to rem */
-  border: none;
-  border-radius: 0.25rem; /* 4px to rem */
-  cursor: pointer;
+    background-color: #002855;
+    color: white;
+    padding: 0.8125rem 1.6875rem; /* 13px 27px to rem */
+    border: none;
+    border-radius: 0.25rem; /* 4px to rem */
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 20px;
+    font-weight: 500;
 }
 
 .user-download-template-btn:hover {
-  background-color: #002855;
+    background-color: #002855;
 }
 
 .user-button-container {
-  margin-top: 6.25rem; /* 100px to rem */
-  padding-left: 28.125rem; /* 450px to rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.25rem; /* 100px to rem */
 }
 
 .user-select-file {
-  color: #fdbf6f;
+    color: #fdbf6f;
 }
 
 .user-bulk-upload-color {
-  color: #32404f;
+    color: #32404f;
 }
 
-@media screen and (max-width: 23.4375rem) {
-  /* 375px to rem */
-  .user-download-template-btn {
-    display: none;
-  }
+@media screen and (max-width: 768px) {
+    /* 375px to rem */
+    .user-download-template-btn {
+        display: none;
+    }
+    .user-form-row {
+        grid-template-columns: 1fr;
+    }
+    .user-list {
+        width: 70rem;
+    }
 }

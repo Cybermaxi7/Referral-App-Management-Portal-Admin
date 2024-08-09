@@ -1,7 +1,6 @@
 .welcome-message {
     font-size: 1.5625rem;
-    font-weight: 700;
-    font-family: "Circular Std";
+
     line-height: 20px;
     padding: 1rem 0;
     display: flex;
@@ -64,31 +63,34 @@
 }
 
 .dashboard-cards {
-    display: flex;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
     .card-one,
     .card-two,
     .card-three,
     .card-four {
-        width: 22%;
+        width: 100%;
         height: 14rem;
-        border-radius: 2%;
-        color: white;
+        border-radius: 5px;
+        color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 2rem;
 
         a {
-            color: white;
+            color: #fff;
             font-size: 12px;
+            font-weight: 500;
         }
 
         .card-text {
             display: flex;
             justify-content: end;
             font-size: 3rem;
+            color: #fff;
         }
     }
 
@@ -132,7 +134,7 @@
                 color: white;
                 font-size: 10px;
                 font-weight: 200;
-                border-radius: 2%;
+                border-radius: 5px;
             }
         }
 
@@ -166,6 +168,7 @@
                 text-align: left;
                 padding: 1rem 2rem 3rem 1rem;
                 font-size: 12px;
+                border-spacing: 1rem;
 
                 th {
                     color: #002855;
@@ -268,6 +271,10 @@
     }
 }
 
+#myChartt {
+    width: 100% !important;
+}
+
 /* Modal container */
 .modal {
     display: none;
@@ -346,10 +353,14 @@
 #sendMessageButton:hover {
     background-color: #218838;
 }
+@media screen and (max-width: 991px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .dashboard-cards {
-        flex-direction: column;
         gap: 3rem;
 
         .card-one,
@@ -370,5 +381,11 @@
         .prospect-chart-activity-right {
             width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
     }
 }
