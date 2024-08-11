@@ -61,216 +61,248 @@
     width: 100% !important;
     height: 100%;
 }
-
+.dashboard-cards a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.dashboard-cards .card-text {
+    display: flex;
+    justify-content: flex-end;
+}
 .dashboard-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     margin-top: 2rem;
-    .card-one,
-    .card-two,
-    .card-three,
-    .card-four {
-        width: 100%;
-        height: 14rem;
-        border-radius: 5px;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 2rem;
-
-        a {
-            color: #fff;
-            font-size: 12px;
-            font-weight: 500;
-        }
-
-        .card-text {
-            display: flex;
-            justify-content: end;
-            font-size: 3rem;
-            color: #fff;
-        }
+}
+/* Animation for Fading In and Out  */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
     }
-
-    .card-one {
-        background-color: #002855;
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
     }
-
-    .card-two {
-        background-color: #e6b014;
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
+}
 
-    .card-three {
-        background-color: #353535;
-    }
+.fade-in {
+    animation: fadeInScale 3s ease-in-out;
+}
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+    width: 100%;
+    height: 14rem;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
 
-    .card-four {
-        background-color: #00b388;
-    }
+.card-one a,
+.card-two a,
+.card-three a,
+.card-four a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card-one .card-text,
+.card-two .card-text,
+.card-three .card-text,
+.card-four .card-text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.card-one {
+    background-color: #002855;
+}
+
+.card-two {
+    background-color: #e6b014;
+}
+
+.card-three {
+    background-color: #353535;
+}
+
+.card-four {
+    background-color: #00b388;
 }
 
 .dashboard-card-bottom {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-
-    .prospect-card-left {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        gap: 2rem;
-
-        .prospect-buttons {
-            display: flex;
-            justify-content: space-between;
-
-            button {
-                background-color: #002855;
-                width: 30%;
-                padding: 8px;
-                color: white;
-                font-size: 10px;
-                font-weight: 200;
-                border-radius: 5px;
-            }
-        }
-
-        .prospect-details-card {
-            background-color: white;
-            font-size: "Circular Std";
-            border-radius: 5px;
-
-            .card-top-left {
-                border-bottom: 1px solid #f0f0f0;
-                padding: 1rem;
-                display: flex;
-                justify-content: space-between;
-
-                p {
-                    font-size: 12px;
-                    font-weight: 700;
-                    color: #353535;
-                }
-
-                a {
-                    background-color: #002855;
-                    color: white;
-                    padding: 4px 8px;
-                    border-radius: 3%;
-                }
-            }
-
-            table {
-                width: 100%;
-                text-align: left;
-                padding: 1rem 2rem 3rem 1rem;
-                font-size: 12px;
-                border-spacing: 1rem;
-
-                th {
-                    color: #002855;
-                    font-weight: 700;
-                    padding: 1rem 0;
-                }
-
-                td {
-                    padding: 1rem 0;
-                }
-
-                .status {
-                    text-align: right;
-                }
-                .pending {
-                    color: #ffcd28;
-                }
-
-                .completed {
-                    color: #00b388;
-                }
-            }
-        }
-    }
-
-    .prospect-chart-activity-right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 20px;
-
-        .card-top-right {
-            background-color: white;
-            padding: 1rem 2rem;
-            border-radius: 3px 3px 0 0;
-            border-bottom: 1px solid #f0f0f0;
-
-            p {
-                font-size: 12px;
-                font-weight: 700;
-                color: #353535;
-            }
-        }
-
-        .chart-body {
-            background-color: white;
-            padding: 0.6rem;
-
-            img {
-                width: 400px;
-                height: 150px;
-            }
-        }
-
-        .card-bottom-right {
-            background-color: white;
-            padding: 1rem 2rem;
-            border-radius: 3px 3px 0 0;
-            border-bottom: 1px solid #f0f0f0;
-
-            p {
-                font-size: 12px;
-                font-weight: 700;
-                color: #353535;
-            }
-        }
-
-        .activity-body {
-            padding: 15px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-
-            .notification {
-                display: flex;
-                justify-content: space-between;
-
-                a {
-                    color: #002855;
-                    font-weight: 700;
-                    font-size: 12px;
-                }
-            }
-
-            .left-notification {
-                display: flex;
-                flex-direction: column;
-                /* gap: 5px; */
-                font-size: 12px;
-
-                span {
-                    color: #002855;
-                    font-weight: 700;
-                    font-size: 10px;
-                }
-            }
-        }
-    }
 }
 
+.prospect-card-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 2rem;
+}
+
+.prospect-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prospect-buttons button {
+    background-color: #002855;
+    width: 30%;
+    padding: 8px;
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    border-radius: 5px;
+}
+
+.prospect-details-card {
+    background-color: white;
+    font-size: "Circular Std";
+    border-radius: 5px;
+}
+
+.card-top-left {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-top-left p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #353535;
+}
+
+.card-top-left a {
+    background-color: #002855;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3%;
+}
+
+.prospect-details-card table {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 2rem 3rem 1rem;
+    font-size: 12px;
+    border-spacing: 1rem;
+}
+
+.prospect-details-card th {
+    color: #002855;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.prospect-details-card td {
+    padding: 1rem 0;
+}
+
+.prospect-details-card .status {
+    text-align: right;
+}
+
+.prospect-details-card .pending {
+    color: #ffcd28;
+}
+
+.prospect-details-card .completed {
+    color: #00b388;
+}
+
+.prospect-chart-activity-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.card-top-right {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-top-right p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #353535;
+}
+
+.chart-body {
+    background-color: white;
+    padding: 0.6rem;
+}
+
+.chart-body img {
+    width: 400px;
+    height: 150px;
+}
+
+.card-bottom-right {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.card-bottom-right p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #353535;
+}
+
+.activity-body {
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.notification {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification a {
+    color: #002855;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.left-notification {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.left-notification span {
+    color: #002855;
+    font-weight: 700;
+    font-size: 10px;
+}
 #myChartt {
     width: 100% !important;
 }

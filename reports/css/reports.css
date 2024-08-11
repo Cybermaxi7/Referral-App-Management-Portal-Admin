@@ -119,6 +119,7 @@
     padding: 2rem;
     background-color: #fff;
     border-radius: 5px;
+    
 }
 .recent-reports-heading {
     display: flex;
@@ -1625,6 +1626,7 @@
     .search-by {
         width: 100%;
         border: 1px solid #e5e5e5;
+        justify-content: space-between;
     }
     .input-container {
         border: 1px solid #e5e5e5;
