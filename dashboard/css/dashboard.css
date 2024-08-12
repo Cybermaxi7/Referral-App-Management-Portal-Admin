@@ -305,7 +305,7 @@
 }
 #myChartt {
     width: 100% !important;
-    height: 19rem !important;
+    height: 22rem !important;
 }
 
 /* Modal container */
@@ -413,6 +413,9 @@
 
         .prospect-chart-activity-right {
             width: 100%;
+        }
+        #myChartt {
+            height: 19rem !important;
         }
     }
 }
