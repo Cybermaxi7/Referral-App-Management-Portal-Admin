@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My trash</title>
+    <link rel="stylesheet" href="bulk-upload2.css">
+</head>
+<body>
+    <main>
+    <div class="container">
+       
+        <main class="content">
+           
+            <section class="branches-bulk-upload">
+                    <div class="header">
+                        <h1>Branches Profile</h1>
+                        
+                        <div class="back"> 
+                            <img src="/branch/assets/eva_arrow-back-outline.svg">
+                            <p>Back To Branch</p>
+                        </div>
+                    </div>
+
+                    <div class="bulk-upload">
+                        <div class="upload">
+                           <div class="radio">
+                            <p>Select creation type</p>
+                            <div class="radio-buttons">
+                                <input type="radio" id="content1" name="content" value="content1" checked>
+                                <label for="content1" >Individual</label>
+                                <input type="radio" id="content2" name="content" value="content2">
+                                <label for="content2">Bulk upload</label>
+                            </div>
+                           </div>
+                            <div class="bttn">
+                                <a href="#">Cancel</a>
+                            </div>
+                            
+                        </div>
+                        <div class="download">
+                            <h3>Bulk Upload</h3>
+                            <p>Please ensure the file is in excel (.XLS) format</p>
+                        </div>
+                        <div class="upload-files">
+                            <div class="files">
+                            <img src="/branch/assets/Ellipse 9.svg">
+                            <img src="/branch/assets/icons8_upload-2.svg" id="iconn">
+                            <p><span id="select"> Select file </span>or drag and drop</p>
+                            <p id="csv">CSV or .XLSX file</p>
+                        </div>
+                        
+                        </div>
+                        <div class="buttonn">
+                        <img src="/branch/assets/bx_download.svg"><button type="button" id="butn" >Download excel template</button>
+                    </div>
+                    </div>
+                    
+            </section>
+        </main>
+    </div>
+
+
+
+    <div class="container">
+       
+        <main class="content">
+           
+            <section class="branches-bulk-upload">
+                    <div class="header">
+                        <h1>Branches Profile</h1>
+                        
+                        <div class="back"> 
+                            <img src="/branch/assets/eva_arrow-back-outline.svg">
+                            <p>Back To Branch</p>
+                        </div>
+                    </div>
+
+                    <div class="bulk-upload">
+                        <div class="upload">
+                           <div class="radio">
+                            <p>Select creation type</p>
+                            <div class="radio-buttons">
+                                <input type="radio" id="content1" name="content" value="content1" checked>
+                                <label for="content1" >Individual</label>
+                                <input type="radio" id="content2" name="content" value="content2">
+                                <label for="content2">Bulk upload</label>
+                            </div>
+                           </div>
+                            <div class="bttn">
+                                <a href="#">Cancel</a>
+                            </div>
+                            
+                        </div>
+                        <form>
+                            <h3>Fill User Information</h3>
+                            <div class="form-row">
+                              <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" />
+                              </div>
+                              <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" />
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group">
+                                <label for="branch">Select Branch</label>
+                                <select id="branch" name="branch">
+                                  <option value="branch1">Branch 1</option>
+                                  <option value="branch2">Branch 2</option>
+                                  <!-- Add more options as needed -->
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" />
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" id="phone-number" name="phone-number" />
+                              </div>
+                            </div>
+                            <div class="form-actions">
+                              <button type="submit">Create User</button>
+                            </div>
+                          </form>
+                    <link rel="script" href="bulky.js">
+            </section>
+        </main>
+    </div>
+</main>
+
+</body>
+</html>

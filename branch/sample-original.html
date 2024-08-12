@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prospects - Referral App Management Portal</title>
+        <link rel="canonical" href="https://www.firstbanknigeria.com/" />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+        />
+        <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/branch/css/samples-original.css" />
+    </head>
+    <body>
+        <div class="dashboard">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Logo and Navigation Links -->
+                <div class="logo-container">
+                    <img
+                        src="/dashboard/assets/logo.svg"
+                        alt="first bank logo"
+                    />
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li
+                            onclick="window.location.href='/dashboard'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-1.svg"
+                                    alt="icon-1"
+                                />
+                            </div>
+                            <p>Dashboard</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/prospects'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-2.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Prospects</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/users'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-3.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Users</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/branch'"
+                            class="nav-link active"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-4.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Branch</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/reports'"
+                            class="nav-link"
+                        >
+                            <div class="report-logo">
+                                <img
+                                    src="/dashboard/assets/icon-5.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Reports</p>
+                        </li>
+                        <li
+                            onclick="window.location.href='/admin'"
+                            class="nav-link"
+                        >
+                            <div>
+                                <img
+                                    src="/dashboard/assets/icon-6.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <p>Admin</p>
+                        </li>
+                        <li>
+                            <div
+                                class="nav-search nav-search-sidebar"
+                                style="display: none"
+                            >
+                                <div class="nav-search-icon-container">
+                                    <img
+                                        src="/dashboard/assets/search-icon.svg"
+                                        alt="search icon"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="What are you looking for?"
+                                />
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <!-- Top Navigation Bar -->
+                <div class="top-nav">
+                    <!-- Hamburger Menu -->
+                    <button class="hamburger-menu">
+                        <img src="/reports/assets/menu.svg" alt="menu icon" />
+                    </button>
+                    <!-- Search bar, user info, etc. -->
+                    <div class="nav-search">
+                        <div class="nav-search-icon-container">
+                            <img
+                                src="/dashboard/assets/search-icon.svg"
+                                alt="search icon"
+                            />
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="What are you looking for?"
+                        />
+                    </div>
+                    <div class="user-info">
+                        <button class="bell-icon-container">
+                            <img
+                                src="/dashboard/assets/bell-icon.svg"
+                                alt="bell icon"
+                            />
+                        </button>
+                        <button class="avatar-container">
+                            <img
+                                src="/dashboard/assets/avatar.svg"
+                                alt="avatar image"
+                            />
+                        </button>
+                        <p class="user-name">TheEndDeen</p>
+                        <button class="arrow-down-container">
+                            <img
+                                src="/dashboard/assets/arrow-down.svg"
+                                alt="arrow down icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content Area (this is the part that changes) -->
+                <div class="content">
+                    <!-- Dynamic content goes here -->
+                    <div class="container" id="branch-user-suspend">
+                        <section class="branches-property">
+                            <div class="header">
+                                <h1>Branches Profile</h1>
+                                <div class="back" id="myBack">
+                                    <img
+                                        src="/branch/assets/eva_arrow-back-outline.svg"
+                                        alt="Back"
+                                    />
+                                    <p>Back To Branch</p>
+                                </div>
+                            </div>
+
+                            <div class="custom-container">
+                                <div class="image-section">
+                                    <img
+                                        src="/branch/assets/159773439_l 1.svg"
+                                        alt="Description"
+                                    />
+                                    <p>Lagos Branch</p>
+                                </div>
+                                <div class="text-section">
+                                    <div class="top-right-image">
+                                        <img
+                                            src="/branch/assets/Group 2318.png"
+                                            alt="Small Description"
+                                            width="20px"
+                                        />
+                                    </div>
+                                    <div class="first">
+                                        <div class="row" id="section-one">
+                                            <div class="column">Name</div>
+                                            <div class="column">Address</div>
+                                            <div class="column">
+                                                Branch State
+                                            </div>
+                                            <div class="column">Date Added</div>
+                                        </div>
+                                        <div class="row row-2" id="section-two">
+                                            <div class="column">
+                                                Lagos Branch
+                                            </div>
+                                            <div class="column">
+                                                121/123 Funsho Willaims Ave
+                                            </div>
+                                            <div class="column">Lagos</div>
+                                            <div class="column">
+                                                04 Jan 2023
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="first">
+                                        <div class="row" id="section-three">
+                                            <div class="column">
+                                                Branch Manager
+                                            </div>
+                                            <div class="column">
+                                                Local Government Area
+                                            </div>
+                                            <div class="column">
+                                                Top Referral
+                                            </div>
+                                            <div class="column">
+                                                Revenue Generated
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="row row-2"
+                                            id="section-four"
+                                        >
+                                            <div class="column">
+                                                Micheal Adesanya
+                                            </div>
+                                            <div class="column">Surulere</div>
+                                            <div class="column">
+                                                Seyike Sojinrin
+                                            </div>
+                                            <div class="column">
+                                                N10,000,000.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="first">
+                                        <div class="row buttons">
+                                            <button
+                                                class="btn"
+                                                style="
+                                                    background-color: #002855;
+                                                "
+                                            >
+                                                Edit Profile
+                                            </button>
+                                            <button
+                                                class="btn btn-change"
+                                                style="
+                                                    background-color: #c61531;
+                                                "
+                                                id="suspendBtn"
+                                            >
+                                                Suspend
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="semi-menu">
+                                <div class="tabs">
+                                    <button
+                                        class="all active"
+                                        width="20%"
+                                        id="userBtn"
+                                    >
+                                        User
+                                    </button>
+                                    <button class="" id="prospectBtn">
+                                        Prospect
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="responsive_table" id="table-one">
+                                <div class="tab">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    Name<img
+                                                        src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Address<img
+                                                    src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Branch Manager<img
+                                                    src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    State<img
+                                                    src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    LGA<img
+                                                    src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Prospect<img
+                                                    src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>
+                                                    Date Added<img
+                                                    src="/branch/assets/upnddown.svg"
+                                                    />
+                                                </th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Repeat this row as needed -->
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/Ellipse 47.svg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Seyi Olanrewaju</td>
+                                                <td>seyiwaju@gmail.com</td>
+                                                <td>08165476543</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>05</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                        src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/Ellipse 47.svg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Seyi Olanrewaju</td>
+                                                <td>seyiwaju@gmail.com</td>
+                                                <td>08165476543</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>05</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/Ellipse 47.svg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Seyi Olanrewaju</td>
+                                                <td>seyiwaju@gmail.com</td>
+                                                <td>08165476543</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>05</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/Ellipse 47.svg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Seyi Olanrewaju</td>
+                                                <td>seyiwaju@gmail.com</td>
+                                                <td>08165476543</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>05</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/Ellipse 47.svg"
+                                                        alt="Icon"
+                                                    />
+                                                </td>
+                                                <td>Seyi Olanrewaju</td>
+                                                <td>seyiwaju@gmail.com</td>
+                                                <td>08165476543</td>
+                                                <td>Lagos State</td>
+                                                <td>Surulere</td>
+                                                <td>05</td>
+                                                <td>01 Jan 2023</td>
+                                                <td>
+                                                    <img
+                                                    src="/branch/assets/three.dots.svg"
+                                                    />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div
+                        class="responsive_table"
+                        id="table-two"
+                        style="display: none"
+                    >
+                        <div class="tab">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Name<img
+                                                src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>
+                                            Email<img
+                                            src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>
+                                            Phone Number<img
+                                            src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>
+                                            Product Interest<img
+                                            src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>
+                                            Assigned To<img
+                                            src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>
+                                            Date Added<img
+                                            src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>
+                                            Status<img
+                                            src="/branch/assets/upnddown.svg"
+                                            />
+                                        </th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Repeat this row as needed -->
+                                    <tr>
+                                        <td>
+                                            <img
+                                                src="/branch/assets/Ellipse 47.svg"
+                                                alt="Icon"
+                                            />
+                                        </td>
+                                        <td>Nurudeen Ibrahim</td>
+                                        <td>theenddeens@gmail.com</td>
+                                        <td>08165476543</td>
+                                        <td>Auto Insurance</td>
+                                        <td>Seyi Olanrewaju</td>
+                                        <td>01 Jan 2023</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                id="orange"
+                                                style="
+                                                    background-color: #ffb946;
+                                                    border: 1px solid #ffb946;
+                                                "
+                                            >
+                                                Ongoing
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <img src="/branch/assets/three.dots.svg" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img
+                                            src="/branch/assets/Ellipse 47.svg"
+                                                alt="Icon"
+                                            />
+                                        </td>
+                                        <td>Nurudeen Ibrahim</td>
+                                        <td>theenddeens@gmail.com</td>
+                                        <td>08165476543</td>
+                                        <td>Auto Insurance</td>
+                                        <td>Seyi Olanrewaju</td>
+                                        <td>01 Jan 2023</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                id="green"
+                                                style="
+                                                    background-color: #00b388;
+                                                    border: 1px solid #00b388;
+                                                "
+                                            >
+                                                Closed
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <img src="/branch/assets/three.dots.svg" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img
+                                            src="/branch/assets/Ellipse 47.svg"
+                                                alt="Icon"
+                                            />
+                                        </td>
+                                        <td>Nurudeen Ibrahim</td>
+                                        <td>theenddeens@gmail.com</td>
+                                        <td>08165476543</td>
+                                        <td>Auto Insurance</td>
+                                        <td>Seyi Olanrewaju</td>
+                                        <td>01 Jan 2023</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                id="red"
+                                                style="
+                                                    background-color: #e30000;
+                                                    border: 1px solid #e30000;
+                                                "
+                                            >
+                                                Out of SLA
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <img src="/branch/assets/three.dots.svg" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img
+                                            src="/branch/assets/Ellipse 47.svg"
+                                                alt="Icon"
+                                            />
+                                        </td>
+                                        <td>Nurudeen Ibrahim</td>
+                                        <td>theenddeens@gmail.com</td>
+                                        <td>08165476543</td>
+                                        <td>Auto Insurance</td>
+                                        <td>Seyi Olanrewaju</td>
+                                        <td>01 Jan 2023</td>
+                                        <td>
+                                            <button
+                                                type="button"
+                                                id="blue"
+                                                style="
+                                                    background-color: #0277e6;
+                                                    border: 1px solid #0277e6;
+                                                "
+                                            >
+                                                Open
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <img src="/branch/assets/three.dots.svg" />                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="/scripts.js"></script>
+        <script src="/branch/js/sample-original.js"></script>
+    </body>
+</html>

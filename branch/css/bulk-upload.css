@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+
+
+.content {
+    flex: 1;
+    background-color: #F5F7FA;
+    padding: 1.25rem; /* 20px */
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    min-width: 100%;
+    height: 60px;
+    margin-left: -18px;
+    margin-top: -18px;
+}
+
+header input {
+    padding: 0.625rem; /* 10px */
+    width: 11.75rem; /* 300px */
+    background-color: #F0F2FA;
+    border-radius: 0.25rem; /* 4px */
+    border:1px solid #F0F2FA;
+    color: #34475E;
+    font-size: 11px;
+    
+}
+
+header .search img{
+    margin-left: 10px;
+}
+
+header .search{
+    display: flex;
+    background-color: #F0F2FA;
+    margin-left: 20px;
+}
+
+header .user-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+header .user-profile span{
+    font-size: 10px;
+}
+
+header .user-profile #bell{
+    width:15px;    
+}
+ 
+header .user-profile img {
+    width: 2.0rem; /* 40px */
+    border-radius: 50%;
+    margin-right: 0.625rem; /* 10px */
+}
+
+.branches-bulk-upload {
+    margin-top: .50rem; /* 20px */
+    height: 35rem;
+}
+
+.branches-bulk-upload .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.branches-bulk-upload .header h1 {
+    font-size: 1.0rem; 
+    color: #585858;
+}
+.branches-bulk-upload .back{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.branches-bulk-upload .back p{
+    font-size: .7rem;
+    color: #002855;
+    margin-top: 2px;
+}
+.branches-bulk-upload .back img{
+    width: 1rem;
+}
+.branches-bulk-upload .bulk-upload{
+    background-color: white;
+    height: 32rem;
+}
+.branches-bulk-upload .bulk-upload .upload{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    margin: 1rem;
+}
+.branches-bulk-upload .bulk-upload .download p{
+    font-size: 12px;
+    color: #AFB0B1;
+    margin-top: .8rem;
+} 
+.branches-bulk-upload .bulk-upload .download h3{
+    font-size: 1.0rem; 
+    color: #32404F;
+}
+.branches-bulk-upload .bulk-upload .bttn button{
+    background-color: white;
+    color: #002855;
+    padding: .50rem .7rem;
+    border-radius: 5px;
+}
+.branches-bulk-upload .bulk-upload .upload-files{
+    width: 90%;
+    height: 15rem;
+    border: 1px solid#00000026;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.branches-bulk-upload .bulk-upload .upload-files .files{
+    margin-top: 3rem;
+    text-align: center;
+}
+.branches-bulk-upload .bulk-upload .upload-files #iconn{
+    position: relative;
+    right: 3.35rem;
+    bottom: 1.0rem;
+}
+.branches-bulk-upload .bulk-upload .upload-files p{
+    color: #002855;
+    font-size: 12px;
+    margin-top: .3rem;
+    margin-right: 1.9rem;
+}
+.branches-bulk-upload .bulk-upload .upload-files #csv{
+    color: #AFB0B1;
+    font-size: 10px;
+    margin-top: .3rem;
+}
+.branches-bulk-upload .bulk-upload .upload-files #select{
+    color: #EAB323;
+}
+
+
+@media (min-width: 2500px){
+
+    .branches-property-prospect-green .header h1 {
+        font-size:1.5rem; 
+        color: #585858;
+    }
+    .branches-property-prospect-green .tabs button {
+        height: 60px; 
+        width: 50px;
+        padding: 0.8rem .6rem;
+        font-size: 1.1rem;
+    }
+    .branches-property-prospect-green .header button {
+        padding: 0.500rem 1.00rem; 
+        background-color: #112B4E;
+        color: white;
+        border: none;
+        border-radius: 0.10rem; /* 2px */
+        cursor: pointer;
+        font-size:1.1rem;
+        margin-right: .1rem;
+    }
+    .branches-property-prospect-green .by{
+        font-size: 1.1rem;
+
+    }
+    .branches-property-prospect-green .first_search .search button{
+        font-size: 1.1rem;
+    }
+    .branches-property-prospect-green .header button img{
+        margin-right: 8px; 
+        width: 20px;
+    }
+    .responsive_table table th{
+        font-size: 1.2rem;
+    }
+    .branches-property-prospect-green table tr td{
+        color: #353535;
+        font-size: 1.0rem;
+    }
+    .first_search button{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1440px){
+    .responsive_table table th{
+        font-size: 1.2rem;
+    }
+    .branches-property-prospect-green table tr td{
+        color: #353535;
+        font-size: 1.0rem;
+    }
+    .first_search button{
+        font-size: 15px;
+    }
+    /* table tr td{
+        font-size: .9rem;
+    }
+    .branches table th{
+        font-size: 1.0rem;
+    } */
+}
+
+
+@media (min-width: 1024px){
+    
+    .branches-property-prospect-green .by{
+        font-size: .6rem;
+    }
+    .branches-property-prospect-green table th {
+        background-color:white;
+        color: #7F8B94;
+        font-size: .7rem;
+    }
+    .branches-property-prospect-green table tr td{
+        color: #353535;
+        font-size: .7rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .branches-property-prospect-green .search .by p{
+        font-size: .5rem;
+    }
+    .branches-property-prospect-green .first_search .search button{
+        width: 4rem;
+        height: 2rem; 
+        text-align: center;
+        background-color: #112B4E;
+    }
+    hr{
+        margin: 0px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .branches-property-prospect-green .tabs{
+        width: 100%;
+    }
+    .branches-property-prospect-green .property-container {
+        width: 130%;
+    }
+    .branches-property-prospect-green .property-container .propsss, .branches-property-green .property-container .props{
+        gap: 1rem;
+    }
+    .branches-property-prospect-green .property-container #up{
+        margin-left: 2rem;
+    }
+    .branches-property-prospect-green .property-container .propss{
+       margin-left: 1rem;
+    }
+    .branches-bulk-upload .bulk-upload .upload{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem .9rem;
+        margin: 1rem;
+    }
+    .branches-bulk-upload .bulk-upload .download p{
+        font-size: 10px;
+        color: #AFB0B1;
+        margin-top: .8rem;
+    } 
+    .branches-bulk-upload .bulk-upload .download h3{
+        font-size: .8rem; 
+        color: #585858;
+    }
+    .branches-bulk-upload .bulk-upload .bttn button{
+        background-color: white;
+        color: #002855;
+        padding: .50rem .7rem;
+        border-radius: 5px;
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 425px){
+    .branches-property-prospect-green .header h1 {
+        font-size: .8rem; 
+    }
+    .branches-property-prospect-green .header button{
+        font-size:.5rem
+    }
+    .branches-property-prospect-green .first_search .search button{
+        padding: 0.500rem 2.40rem; 
+        font-size: .5rem;
+    }
+    .branches-property-prospect-green .first_search .placeholder{
+        width: 75%;
+    }
+    .branches-property-prospect-green .first_search .placeholder img{
+        margin-top: 10px;
+    }
+    .branches-property-prospect-green .first_search .placeholder input{
+        margin-left: 0.5rem;
+        width: 70%;
+    }
+    header .search img{
+        margin-left: 10px;
+    }
+    
+    header .search{
+        background-color: #F0F2FA;
+        margin-left: 20px;
+        width: 7rem;
+        display: flex;
+    }
+    header input{
+        font-size: .5rem;
+
+    }
+    header .user-profile span{
+        font-size: 8px;
+    }
+    header .user-profile #bell{
+        width:12px;    
+    }
+    header .user-profile #drop{
+        width:12px;    
+    }
+    header .user-profile #user{
+        width:17px;    
+    }
+    header .user-profile{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .branches-property-prospect-green .property-container{
+       display: flex;
+       flex-direction: column;
+    }
+    .branches-property-prospect-green .property-container #main-property{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(150, 149, 149);
+    }
+    .branches-property-prospect-green .property-container .propsss, .branches-property-green .property-container .props{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+    #great-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .branches-property-prospect-green .property-container #up{
+        position: relative;
+        right: 0px;
+    }
+    .branches-bulk-upload .bulk-upload .upload{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem .05rem;
+        margin: 1rem;
+    }
+    .branches-bulk-upload .bulk-upload .download p{
+        font-size: 10px;
+        color: #AFB0B1;
+        margin-top: .3rem;
+    } 
+    .branches-bulk-upload .bulk-upload .download h3{
+        font-size: .8rem; 
+        color: #585858;
+    }
+    .branches-bulk-upload .bulk-upload .bttn button{
+        background-color: white;
+        color: #002855;
+        padding: .3rem .4rem;
+        border-radius: 5px;
+        font-size: .6rem;
+    }
+    .branches-bulk-upload .bulk-upload .upload-files .files{
+        margin-top: 3rem;
+        text-align: center;
+        margin-left: 1.4rem;
+    }
+}
+
+@media (max-width: 320px){
+    .branches-property-prospect-green .property-container #main-property{
+        margin-right: 8rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(150, 149, 149);
+    }
+}
+
+@media (max-width: 375px){
+    .branches-property-prospect-green .property-container #main-property{
+        margin-right: 12rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(150, 149, 149);
+    }
+}
+
+@media (max-width: 425px){
+    .branches-property-prospect-green .property-container #main-property{
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(150, 149, 149);
+    }
+}

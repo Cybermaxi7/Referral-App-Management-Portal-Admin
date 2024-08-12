@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("modal");
     const modalOverlay = document.getElementById("modal-overlay");
     const modalClose = document.getElementById("modal-close");
+    const modalCancel = document.getElementById("modal-cancel");
 
     // Open Modal Function
     function openModal() {
@@ -138,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event Listeners
     openModalButton.addEventListener("click", openModal);
     modalClose.addEventListener("click", closeModal);
+    modalCancel.addEventListener("click", closeModal);
     modalOverlay.addEventListener("click", closeModal);
 });
 
@@ -248,6 +250,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const openCreateReportModalBtn = document.getElementById(
         "openCreateReportModalBtn"
     );
+    const viewBtn = document.getElementById("view-btn");
+    const modal = document.getElementById("modal");
+    const modalOverlay = document.getElementById("modal-overlay");
+    const successModal = document.querySelector(".report-create-success-modal");
 
     // Add a click event listener to the button
     resultsRow.forEach((button) => {
@@ -257,6 +263,29 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".reports-overview").style.display = "none";
             document.querySelector(".summary-widgets").style.display = "none";
 
+            // Hide the view-all-reports-container
+            document.querySelector(
+                ".view-all-reports-container"
+            ).style.display = "none";
+            // Show the sales-reports-container
+            salesReportContainer.style.display = "block";
+            const filterContainerSales = document.querySelector(
+                ".filter-container-sales"
+            );
+            if (salesReportContainer.style.display == "block") {
+                openCreateReportModalBtn.style.display = "none";
+                filterContainerSales.style.display = "flex";
+            }
+        });
+        viewBtn.addEventListener("click", function () {
+            // Hide the reports-card-grid, reports-overview, and summary-widgets
+            document.querySelector(".reports-card-grid").style.display = "none";
+            document.querySelector(".reports-overview").style.display = "none";
+            document.querySelector(".summary-widgets").style.display = "none";
+
+            modal.style.display = "none";
+            modalOverlay.style.display = "none";
+            successModal.style.display = "none";
             // Hide the view-all-reports-container
             document.querySelector(
                 ".view-all-reports-container"
@@ -628,6 +657,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Show the view-all-reports-container
             salesReportContainer.style.display = "block";
+            if (salesReportContainer.style.display == "block") {
+                openCreateReportModalBtn.style.display = "none";
+                filterContainerSales.style.display = "flex";
+            }
         })
     );
     const filterContainerSales = document.querySelector(
@@ -637,9 +670,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const openCreateReportModalBtn = document.getElementById(
         "openCreateReportModalBtn"
     );
+});
 
-    if (salesReportContainer.style.display == "block") {
-        openCreateReportModalBtn.style.display = "none";
-        filterContainerSales.style.display = "flex";
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    const cancelModal = document.querySelector(".modal-cancel-e");
+    const backBtn = document.getElementById("back-btn-e");
+    const modal = document.getElementById("modal-export");
+    const modalOverlay = document.getElementById("modal-overlay");
+    const successModal = document.querySelector(".report-export-success-modal");
+    const salesReportContainer = document.querySelector(
+        ".sales-report-container"
+    );
+
+    cancelModal.addEventListener("click", () => {
+        modal.style.display = "none";
+        modalOverlay.style.display = "none";
+    });
+    backBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+        modalOverlay.style.display = "none";
+        successModal.style.display = "none";
+
+        document.querySelector(".reports-card-grid").style.display = "grid";
+        document.querySelector(".reports-overview").style.display = "grid";
+        document.querySelector(".summary-widgets").style.display = "grid";
+        salesReportContainer.style.display = "none";
+    });
 });

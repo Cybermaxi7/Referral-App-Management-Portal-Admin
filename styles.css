@@ -409,11 +409,18 @@ div.chat-body {
     width: 5rem;
     height: auto;
 }
-
+#openFileManager {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#openFileManager:hover {
+    transform: scale(1.1);
+}
 /* Show hamburger menu on mobile screens */
 @media screen and (max-width: 991px) {
     .hamburger-menu {
         display: block; /* Show on mobile screens */
+        width: 5rem;
     }
 }
 
