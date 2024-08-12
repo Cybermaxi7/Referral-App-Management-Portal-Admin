@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const createBranch = document.getElementById("create-branch");
-    const redirectTo = "bulky.html"; // Specify the page to redirect to
+    const redirectTo = "/branch/bulky.html"; // Specify the page to redirect to
 
     createBranch.addEventListener("click", () => {
         window.location.href = redirectTo;

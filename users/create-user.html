@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Prospects - Referral App Management Portal</title>
+        <title>Users - Referral App Management Portal</title>
         <link rel="canonical" href="https://www.firstbanknigeria.com/" />
         <link
             rel="icon"
@@ -21,8 +21,9 @@
         />
         <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/styles.css" />
-        <link rel="stylesheet" href="/branch/css/bulky.css" />
+        <link rel="stylesheet" href="/users/css/users.css" />
     </head>
+
     <body>
         <div class="dashboard">
             <!-- Sidebar -->
@@ -62,7 +63,7 @@
                         </li>
                         <li
                             onclick="window.location.href='/users'"
-                            class="nav-link"
+                            class="nav-link active"
                         >
                             <div>
                                 <img
@@ -74,7 +75,7 @@
                         </li>
                         <li
                             onclick="window.location.href='/branch'"
-                            class="nav-link active"
+                            class="nav-link"
                         >
                             <div>
                                 <img
@@ -137,6 +138,7 @@
                     <button class="hamburger-menu">
                         <img src="/reports/assets/menu.svg" alt="menu icon" />
                     </button>
+
                     <!-- Search bar, user info, etc. -->
                     <div class="nav-search">
                         <div class="nav-search-icon-container">
@@ -176,173 +178,153 @@
                 <!-- Content Area (this is the part that changes) -->
                 <div class="content">
                     <!-- Dynamic content goes here -->
-                    <section
-                        id="individual-section"
-                        class="branches-bulk-upload"
-                    >
-                        <div class="header">
-                            <h1>Create a new Branch</h1>
+
+                    <!-- create user section -->
+
+                    <h2>Create a New User</h2>
+                    <div class="user-user-create-container">
+                        <div class="user-creation-type-container">
+                            <p class="user-creation-type-label">
+                                Select Creation Type
+                            </p>
+                            <p class="user-cancel-text">
+                                <a href="index.html">Cancel</a>
+                            </p>
                         </div>
-                        <div class="bulk-upload">
-                            <div class="bulk-top">
-                                <p>Select creation type</p>
-                                <p id="myCancel">Cancel</p>
-                            </div>
-                            <div class="upload">
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="content1"
-                                        name="content"
-                                        value="content1"
-                                        checked
-                                    />
-                                    <label for="content1">Individual</label>
-                                </div>
-                                <div>
-                                    <input
-                                        type="radio"
-                                        id="content2"
-                                        name="content"
-                                        value="content2"
-                                    />
-                                    <label for="content2">Bulk upload</label>
-                                </div>
-                            </div>
-                            <form id="branch-form">
-                                <h3>Fill Branch Information</h3>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="branch-name"
-                                            >Branch Name</label
+                        <div class="user-creation-type">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="creation-type"
+                                    id="user-individual-radio"
+                                    value="individual"
+                                    checked
+                                />
+                                Individual
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="creation-type"
+                                    value="bulk-upload"
+                                    id="user-bulk-upload-radio"
+                                />
+                                Bulk Upload
+                            </label>
+                        </div>
+                        <form>
+                            <div class="create-user-section" id="content1">
+                                <h3>Fill User Information</h3>
+                                <div class="user-form-row">
+                                    <div class="user-form-group">
+                                        <label for="user-first-name"
+                                            >First Name</label
                                         >
                                         <input
                                             type="text"
-                                            id="first-name"
+                                            id="user-first-name"
                                             name="first-name"
                                         />
                                     </div>
-                                    <div class="form-group">
-                                        <label for="address">Address</label>
-                                        <input
-                                            type="text"
-                                            id="address"
-                                            name="address"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="branch-code"
-                                            >Branch Code</label
+                                    <div class="user-form-group">
+                                        <label for="user-last-name"
+                                            >Last Name</label
                                         >
                                         <input
                                             type="text"
-                                            id="branch-code"
-                                            name="branch-code"
+                                            id="user-last-name"
+                                            name="last-name"
                                         />
                                     </div>
-                                    <div class="form-group">
-                                        <label for="state">State</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="state"
-                                                name="state"
-                                                class="state"
-                                            />
-                                            <img
-                                                src="/branch/assets/down.svg"
-                                                alt="down arrow icon"
-                                            />
-                                        </div>
+                                </div>
+                                <div class="user-form-row">
+                                    <div class="user-form-group">
+                                        <label for="user-branch"
+                                            >Select Branch</label
+                                        >
+                                        <select id="user-branch" name="branch">
+                                            <option value="branch1">
+                                                Branch 1
+                                            </option>
+                                            <option value="branch2">
+                                                Branch 2
+                                            </option>
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                    </div>
+                                    <div class="user-form-group">
+                                        <label for="user-email">Email</label>
+                                        <input
+                                            type="email"
+                                            id="user-email"
+                                            name="email"
+                                        />
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="lga">LGA</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="lga"
-                                                name="lga"
-                                                class="lga"
-                                            />
-                                            <img
-                                                src="/branch/assets/down.svg"
-                                                alt="down arrow icon"
-                                            />
-                                        </div>
+                                <div class="user-form-row">
+                                    <div class="user-form-group">
+                                        <label for="user-phone-number"
+                                            >Phone Number</label
+                                        >
+                                        <input
+                                            type="tel"
+                                            id="user-phone-number"
+                                            name="phone-number"
+                                        />
                                     </div>
-                                    <div class="form-group">
-                                        <button id="openModalBtn">Create Branch</button>
-                                        
-                                    </div>
-
-                                    <div id="myModal" class="modal" style="display: none;">
-                                        <div class="modal-content">
-                                            <h2>Branch has been created <br> successfully</h2>
-                                            <div class="modal-image">
-                                                <img src="/branch/assets/lf20_od54tgs3.json].svg">
-                                            </div>
-                                            <button id="closeModalBtn" class="close-btn">Close</button>
-                                        </div>
-                                    </div>
-                            
                                 </div>
-                            </form>
-                        </div>
-                    </section>
-                    <section
-                        id="bulk-upload-section"
-                        class="branches-bulk-upload"
-                        style="display: none"
-                    >
-                        <div class="bulk-upload">
-                            <div class="download">
-                                <h3>Bulk Upload</h3>
-                                <p>
-                                    Please ensure the file is in excel (.XLS)
-                                    format
-                                </p>
+                                <div class="user-form-actions">
+                                    <button type="submit">Create User</button>
+                                </div>
                             </div>
-                            <div class="upload-files">
-                                <div class="files">
-                                    <div class="image-holder">
-                                        <img
-                                            src="/branch/assets/Ellipse 9.svg"
-                                        />
-                                        <img
-                                            src="/branch/assets/icons8_upload-2.svg"
-                                            id="iconn"
-                                        />
-                                    </div>
-                                    <p id="openFileManager">
+                            <div class="bulk-upload-container" id="content2">
+                                <div class="user-bulk-upload-info">
+                                    <h3 class="user-bulk-upload-color">
+                                        Bulk Upload
+                                    </h3>
+                                    <p>
+                                        Please ensure the file is in excel
+                                        (.XLS) format
+                                    </p>
+                                </div>
+                                <div class="user-bulk-upload-section">
+                                    <div class="user-file-upload">
+                                        <label
+                                            for="user-file-upload"
+                                            class="user-file-upload-label"
+                                        >
+                                            <div class="upload-icon-container">
+                                                <img
+                                                    src="/users/assets/icons8_upload-2.svg"
+                                                    alt="Upload Icon"
+                                                />
+                                            </div>
+                                            <p class="p-upload">
+                                                <span class="user-select-file"
+                                                    >Select file</span
+                                                >
+                                                or drag and drop
+                                            </p>
+                                            <p class="csv">CSV or .XLSX file</p>
+                                        </label>
                                         <input
                                             type="file"
-                                            id="fileInput"
-                                            style="display: none"
+                                            id="user-file-upload"
                                         />
-                                        <span id="select"> Select file </span>or
-                                        drag and drop
-                                    </p>
-                                    <p id="csv">CSV or .XLSX file</p>
+                                    </div>
+                                </div>
+                                <div class="user-button-container">
+                                    <button class="user-download-template-btn">
+                                        Download excel template
+                                    </button>
                                 </div>
                             </div>
-                            <div class="button">
-                                <img src="/branch/assets/bx_download.svg" />
-                                <button type="button" id="butn">
-                                    Download excel template
-                                </button>
-
-                                
-                            </div>
-                        </div>
-                    </section>
+                        </form>
+                    </div>
                 </div>
             </main>
         </div>
         <script src="/scripts.js"></script>
-        <script src="/branch/js/bulky.js"></script>
+        <script src="/users/js/create-user.js"></script>
     </body>
 </html>

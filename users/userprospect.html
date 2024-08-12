@@ -21,7 +21,7 @@
     />
     <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/users/css/users.css" />
+    <link rel="stylesheet" href="/users/css/usersprofile.css" />
   </head>
 
   <body>
@@ -121,38 +121,87 @@
         <!-- Content Area (this is the part that changes) -->
         <div class="content">
           <!-- Dynamic content goes here -->
-          <section class="users-section">
-            <h1>Users</h1>
-            <button class="create-user-btn" id="create-user-btn">
-              <a class="create-user-link" href="javascript:void(0)"
-                >+ Create User</a
-              >
-            </button>
-          </section>
-          <!-- user-search container -->
-          <section class="user-whitebackground">
-            <section class="search-section">
-              <div class="search-container">
-                <input
-                  type="text"
-                  placeholder="Search By: Name"
-                  id="search-input"
-                />
+          <div class="user-profile-content">
+            <div class="profile-header">
+              <div class="header-left">
+                <h2>User's Profile</h2>
               </div>
-              <button class="find-btn" id="find-btn">Find</button>
-              <!-- <a href="usersprofile.html">userprofile</a> -->
-            </section>
-          </section>
+              <div class="header-right">
+                <img
+                  class="user-profile-arrow"
+                  src="/users/assets/back arrow user-profile.svg"
+                  alt=""
+                />
+                <a href="index.html" class="back-to-users">
+                  <i class="fas fa-arrow-left"></i>Back To Users
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-container">
+              <div class="profile-header-icon">
+                <img
+                  class="user-profile-icon"
+                  src="/users/assets/user profile icon.svg"
+                  alt="Profile Picture"
+                  width="100"
+                  height="100"
+                />
+                <div class="name">John Samuel</div>
+              </div>
+              <div class="profile-info">
+                <div class="info-item">
+                  <label>Name</label>
+                  <span>Seyi Olanrewaju</span>
+                </div>
+                <div class="info-item">
+                  <label>Manager</label>
+                  <span>Seyi Olanrewaju</span>
+                </div>
+                <div class="info-item">
+                  <label>Prospects</label>
+                  <span>5</span>
+                </div>
+                <div class="info-item">
+                  <label>Date Created</label>
+                  <span>04 Jan 2023</span>
+                </div>
+                <div class="info-item">
+                  <label>Phone Number</label>
+                  <span>08965476453</span>
+                  <label class="button-cover">
+                    <button class="edit-profile">Edit Profile</button>
+                  </label>
+                </div>
+                <div class="info-item">
+                  <label>Email Address</label>
+                  <span>Johnsam@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <label>Branch</label>
+                  <span>Auto Insurance</span>
+                </div>
+                <div class="info-item">
+                  <label></label>
+                  <span class="status-active"></span>
+                  <label class="button-cover">
+                    <button class="suspend">Suspend</button>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="profile-actions"></div>
+          </div>
+
+          <!-- prospect-table -->
 
           <section class="tabs-section">
-            <button class="tab all" id="all-btn">All</button>
-            <button class="user-activebutton" id="active-btn">Active</button>
-            <button class="user-suspendedbutton" id="suspended-btn">
-              Suspended
+            <button class="tab all">
+              <a class="user-activity-link" href="usersprofile.html">Activty</a>
             </button>
+            <button class="user-activebutton">Prospect</button>
           </section>
 
-          <!-- user-table -->
           <section class="user-table-section">
             <table class="user-list">
               <thead>
@@ -182,15 +231,7 @@
                     />
                   </th>
                   <th>
-                    Branch
-                    <img
-                      class="user-table-dropdown"
-                      src="/dashboard/assets/table head dropdown.svg"
-                      alt=""
-                    />
-                  </th>
-                  <th>
-                    Prospect
+                    Product Interest
                     <img
                       class="user-table-dropdown"
                       src="/dashboard/assets/table head dropdown.svg"
@@ -199,6 +240,14 @@
                   </th>
                   <th>
                     Date Added
+                    <img
+                      class="user-table-dropdown"
+                      src="/dashboard/assets/table head dropdown.svg"
+                      alt=""
+                    />
+                  </th>
+                  <th>
+                    Status
                     <img
                       class="user-table-dropdown"
                       src="/dashboard/assets/table head dropdown.svg"
@@ -227,9 +276,9 @@
                   </td>
                   <td>seyi@lwl@gmail.com</td>
                   <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
+                  <td>Auto Insurance</td>
                   <td>01 Jan 2023</td>
+                  <td><span class="user-ongoing-button">Ongoing</span></td>
                   <td class="user-borderright">
                     <img
                       class="user-table-dot"
@@ -250,9 +299,9 @@
                   </td>
                   <td>seyi@lwl@gmail.com</td>
                   <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
+                  <td>Auto Insurance</td>
                   <td>01 Jan 2023</td>
+                  <td><span class="user-closed-button">Closed</span></td>
                   <td class="user-borderright">
                     <img
                       class="user-table-dot"
@@ -273,9 +322,9 @@
                   </td>
                   <td>seyi@lwl@gmail.com</td>
                   <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
+                  <td>Auto Insurance</td>
                   <td>01 Jan 2023</td>
+                  <td><span class="user-out-button">Out SLA </span></td>
                   <td class="user-borderright">
                     <img
                       class="user-table-dot"
@@ -296,55 +345,9 @@
                   </td>
                   <td>seyi@lwl@gmail.com</td>
                   <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
+                  <td>Auto Insurance</td>
                   <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img
-                      class="user-table-dot"
-                      src="/dashboard/assets/three black dot.svg"
-                      alt=""
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="user-borderleft">
-                    <img
-                      class="user-seyi-icon"
-                      src="/dashboard/assets/seyi .svg"
-                      alt=""
-                    />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
-                  <td class="user-borderright">
-                    <img
-                      class="user-table-dot"
-                      src="/dashboard/assets/three black dot.svg"
-                      alt=""
-                    />
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="user-borderleft">
-                    <img
-                      class="user-seyi-icon"
-                      src="/dashboard/assets/seyi .svg"
-                      alt=""
-                    />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seyi Olanrewaju
-                  </td>
-                  <td>seyi@lwl@gmail.com</td>
-                  <td>08965476453</td>
-                  <td>Lagos Branch</td>
-                  <td>05</td>
-                  <td>01 Jan 2023</td>
+                  <td><span class="user-open-button">Open</span></td>
                   <td class="user-borderright">
                     <img
                       class="user-table-dot"

@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Button references
   const allBtn = document.getElementById("all-btn");
   const activeBtn = document.getElementById("active-btn");
   const suspendedBtn = document.getElementById("suspended-btn");
   const createUserBtn = document.getElementById("create-user-btn");
-  const userManagementPage = document.getElementById("user-management");
-  const createUserPage = document.getElementById("create-user");
 
+  // Function to set active button styles
   function setActiveButton(activeButton) {
     allBtn.style.backgroundColor = "#002855";
     allBtn.style.color = "#fff";
@@ -21,48 +21,42 @@ document.addEventListener("DOMContentLoaded", () => {
       activeBtn.style.backgroundColor = "#fff";
       activeBtn.style.color = "#002855";
     } else if (activeButton === suspendedBtn) {
-      suspendedBtn.style.backgroundColor = "#fff";
-      suspendedBtn.style.color = "#002855";
+      suspendedBtn.style.backgroundColor = "#c61531";
+      suspendedBtn.style.color = "#fff";
     }
   }
 
-  allBtn.addEventListener("click", () => {
-    setActiveButton(allBtn);
-  });
+  // Event listeners for buttons
+  allBtn.addEventListener("click", () => setActiveButton(allBtn));
+  activeBtn.addEventListener("click", () => setActiveButton(activeBtn));
+  suspendedBtn.addEventListener("click", () => setActiveButton(suspendedBtn));
 
-  activeBtn.addEventListener("click", () => {
-    setActiveButton(activeBtn);
-  });
+  // Redirect to create user page
+  if (createUserBtn) {
+    createUserBtn.addEventListener("click", () => {
+      window.location.href = "/users/create-user.html";
+    });
+  }
 
-  suspendedBtn.addEventListener("click", () => {
-    setActiveButton(suspendedBtn);
-  });
-
-  createUserBtn.addEventListener("click", () => {
-    userManagementPage.classList.add("hidden");
-    createUserPage.classList.remove("hidden");
-  });
-
+  // Table row click navigation
   const tableRows = document.querySelectorAll(".user-list tbody tr");
   tableRows.forEach((row) => {
     row.addEventListener("click", () => {
-      window.location.href = "usersprofile.html";
+      window.location.href = "/users/usersprofile.html";
     });
   });
-
-  document
-    .getElementById("bulk-upload-radio")
-    .addEventListener("change", function () {
-      if (this.checked) {
-        window.location.href = "bulkupload.html";
-      }
-    });
 });
 
+// Show the popup when the "Update Profile" button is clicked
 document
-  .getElementById("individual-radio")
-  .addEventListener("change", function () {
-    if (this.checked) {
-      window.location.href = "createuser.html";
-    }
+  .getElementById("update-profile-btn")
+  .addEventListener("click", function () {
+    document.getElementById("user-popup").style.display = "block";
+  });
+
+// Redirect to the user profile page when the "Close" button is clicked
+document
+  .getElementById("close-popup-btn")
+  .addEventListener("click", function () {
+    window.location.href = "usersprofile.html";
   });

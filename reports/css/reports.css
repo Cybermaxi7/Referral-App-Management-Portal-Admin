@@ -119,6 +119,7 @@
     padding: 2rem;
     background-color: #fff;
     border-radius: 5px;
+    
 }
 .recent-reports-heading {
     display: flex;
@@ -1239,6 +1240,7 @@
     background-color: #fff;
     border-radius: 8px;
     margin-top: 4rem;
+    overflow-x: auto;
 }
 .chart-container-inner {
     width: 100%;
@@ -1246,6 +1248,7 @@
     flex-direction: column;
     gap: 4rem;
     overflow-x: auto;
+    position: relative;
 }
 .chart-heading {
     width: 100%;
@@ -1521,9 +1524,6 @@
         width: 100% !important; /* Let the wrapper take the natural width */
     }
 
-    #myChart-2 {
-        width: 60rem !important; /* Set a fixed width for the chart */
-    }
     .chart-container-2 {
         flex-direction: column;
     }
@@ -1589,6 +1589,13 @@
     .arrow-left-container button {
         width: fit-content;
     }
+    .chart-container-inner {
+        width: 100%;
+    }
+    #chart {
+        overflow-x: auto;
+        position: relative;
+    }
 }
 @media screen and (max-width: 606px) {
     .reports-card-grid {
@@ -1619,9 +1626,22 @@
     .search-by {
         width: 100%;
         border: 1px solid #e5e5e5;
+        justify-content: space-between;
     }
     .input-container {
         border: 1px solid #e5e5e5;
         padding: 1rem;
+    }
+    .chart-container-inner {
+        width: 63rem;
+    }
+    #chart {
+        width: 50rem;
+    }
+    .box-chart-content {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
