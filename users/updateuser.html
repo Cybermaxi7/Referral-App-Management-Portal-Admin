@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users - Referral App Management Portal</title>
+    <link rel="canonical" href="https://www.firstbanknigeria.com/" />
+    <link
+      rel="icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.firstbanknigeria.com/wp-content/uploads/2020/08/First-Bank-Logo_Symbol.svg"
+    />
+    <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/users/css/usersprofile.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Logo and Navigation Links -->
+        <div class="logo-container">
+          <img src="/dashboard/assets/logo.svg" alt="first bank logo" />
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li onclick="window.location.href='/dashboard'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-1.svg" alt="icon-1" />
+              </div>
+              <p>Dashboard</p>
+            </li>
+            <li onclick="window.location.href='/prospects'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-2.svg" alt="" />
+              </div>
+              <p>Prospects</p>
+            </li>
+            <li onclick="window.location.href='/users'" class="nav-link active">
+              <div>
+                <img src="/dashboard/assets/icon-3.svg" alt="" />
+              </div>
+              <p>Users</p>
+            </li>
+            <li onclick="window.location.href='/branch'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-4.svg" alt="" />
+              </div>
+              <p>Branch</p>
+            </li>
+            <li onclick="window.location.href='/reports'" class="nav-link">
+              <div class="report-logo">
+                <img src="/dashboard/assets/icon-5.svg" alt="" />
+              </div>
+              <p>Reports</p>
+            </li>
+            <li onclick="window.location.href='/admin'" class="nav-link">
+              <div>
+                <img src="/dashboard/assets/icon-6.svg" alt="" />
+              </div>
+              <p>Admin</p>
+            </li>
+            <li>
+              <div class="nav-search nav-search-sidebar" style="display: none">
+                <div class="nav-search-icon-container">
+                  <img
+                    src="/dashboard/assets/search-icon.svg"
+                    alt="search icon"
+                  />
+                </div>
+                <input type="text" placeholder="What are you looking for?" />
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Top Navigation Bar -->
+        <div class="top-nav">
+          <!-- Hamburger Menu  -->
+          <button class="hamburger-menu">
+            <img src="/reports/assets/menu.svg" alt="menu icon" />
+          </button>
+
+          <!-- Search bar, user info, etc. -->
+          <div class="nav-search">
+            <div class="nav-search-icon-container">
+              <img src="/dashboard/assets/search-icon.svg" alt="search icon" />
+            </div>
+            <input type="text" placeholder="What are you looking for?" />
+          </div>
+          <div class="user-info">
+            <button class="bell-icon-container">
+              <img src="/dashboard/assets/bell-icon.svg" alt="bell icon" />
+            </button>
+            <button class="avatar-container">
+              <img src="/dashboard/assets/avatar.svg" alt="avatar image" />
+            </button>
+            <p class="user-name">TheEndDeen</p>
+            <button class="arrow-down-container">
+              <img
+                src="/dashboard/assets/arrow-down.svg"
+                alt="arrow down icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Content Area (this is the part that changes) -->
+        <div class="content">
+          <!-- Dynamic content goes here -->
+          <div class="user-user-create-container">
+            <div class="user-update-test"><h2>Update Users</h2></div>
+            <div class="user-creation-type-container">
+              <div class="user-text-center">
+                <h3 class="user-creation-type-label">
+                  Complete this in no time
+                </h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="user-details"><h3>User Details</h3></button>
+              </div>
+            </div>
+
+            <form id="user-form">
+              <div class="create-user-section" id="content1">
+                <div class="user-form-row">
+                  <div class="user-form-group">
+                    <label for="user-first-name">First Name</label>
+                    <input
+                      type="text"
+                      id="user-first-name"
+                      name="first-name"
+                      placeholder="seyi"
+                    />
+                  </div>
+                  <div class="user-form-group">
+                    <label for="user-last-name">Last Name</label>
+                    <input
+                      type="text"
+                      id="user-last-name"
+                      name="last-name"
+                      placeholder="Olanrewaju"
+                    />
+                  </div>
+                </div>
+
+                <div class="user-form-row">
+                  <div class="user-form-group">
+                    <label for="user-branch">Select Branch</label>
+                    <select id="user-branch" name="branch">
+                      <option value="branch1">Branch 1</option>
+                      <option value="branch2">Branch 2</option>
+                    </select>
+                  </div>
+                  <div class="user-form-group">
+                    <label for="user-email">Email</label>
+                    <input
+                      type="email"
+                      id="user-email"
+                      name="email"
+                      placeholder="seyi@lwl@gmail.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="user-form-row">
+                  <div class="user-form-group">
+                    <label for="user-phone-number">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="user-phone-number"
+                      name="phone-number"
+                      placeholder="08965476453"
+                    />
+                  </div>
+                </div>
+
+                <div class="user-form-actions">
+                  <button type="button" id="update-profile-btn">
+                    Update Profile
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Pop-up -->
+          <div class="user-popup-container" id="user-popup">
+            <p class="user-popup-message">Profile updated successfully</p>
+            <div class="user-popup-icon-container">
+              <div class="user-popupcircle">
+                <div class="">
+                  <img src="/users/assets/pop mark.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <button class="user-popup-close-button" id="close-popup-btn">
+              Close
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts.js"></script>
+    <script src="/users/js/users.js"></script>
+  </body>
+</html>
