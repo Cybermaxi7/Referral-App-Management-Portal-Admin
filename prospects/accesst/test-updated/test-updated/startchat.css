@@ -1,0 +1,221 @@
+body {
+    width: 900px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.insurance-details {
+    text-align: right;
+}
+
+.insurance-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.status.ongoing {
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #00203f;
+    color: white;
+}
+
+.btn.start-chat {
+    margin-left: 20px;
+}
+
+.back-to-prospects {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #00203f;
+    text-decoration: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #e5e5e5;
+    border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.tab.active {
+    background-color: #ffffff;
+    border-bottom: 2px solid #00203f;
+}
+
+.chat-window {
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.message.right {
+    justify-content: flex-end;
+}
+
+.message.left {
+    justify-content: flex-start;
+}
+
+.message-content {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    font-size: 14px;
+}
+
+.message.right .message-content {
+    background-color: #c8f7dc;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.message-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-input input[type="text"] {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.message-input input[type="text"]:focus {
+    outline: none;
+}
+
+.message-input .btn.send {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.message-input .btn.send img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header, .profile, .insurance-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn.start-chat {
+        margin: 10px 0;
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .message-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .message-input {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .message-input input[type="text"] {
+        margin-bottom: 10px;
+    }
+
+    .message-input .btn.send img {
+        width: 20px;
+        height: 20px;
+    }
+}
