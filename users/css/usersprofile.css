@@ -567,9 +567,15 @@ h2 {
   align-items: center;
   margin-bottom: 20px;
 }
-
+.user-creation-type-label {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
 .user-text-center {
   margin: 0 auto;
+}
+.users-update-text {
+  font-size: 2.5rem;
 }
 
 .user-details {
@@ -578,6 +584,7 @@ h2 {
   padding: 0px 50px;
   border-bottom: 5px solid #002855;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 .user-creation-type {
