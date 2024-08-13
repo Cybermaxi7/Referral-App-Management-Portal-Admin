@@ -166,6 +166,9 @@ form h3 {
     padding: 1rem 3rem;
     margin-block: 7rem;
 }
+#myCancel:hover{
+    cursor: pointer;
+}
 
 .bulk-upload .button button {
     color: inherit;
@@ -173,6 +176,70 @@ form h3 {
     line-height: 20px;
     font-weight: 500;
 }
+
+
+
+
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 4rem;
+    color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    height: 40rem;
+}
+
+.modal-image img{
+    width:auto;
+    height: auto;
+    margin-top: 2rem;
+}
+.modal-image{
+    width: 12.2rem;
+    height: 12.2rem;
+}
+.close-btn {
+    background-color: #002855;
+    color: white;
+    width: 18.5rem;
+    height: 5.3rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+.modal-content h2{
+font-size: 3.2rem;
+}
+
+.close-btn:hover {
+    background-color: #011c3a;
+}
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .form-row {

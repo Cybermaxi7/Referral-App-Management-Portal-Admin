@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Prospects - Referral App Management Portal</title>
+        <title>Create-User - Referral App Management Portal</title>
         <link rel="canonical" href="https://www.firstbanknigeria.com/" />
         <link
             rel="icon"
@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="/branch/css/bulky.css" />
+        <link rel="stylesheet" href="/prospects/css/create-prospect.css" />
     </head>
     <body>
         <div class="dashboard">
@@ -50,7 +51,7 @@
                         </li>
                         <li
                             onclick="window.location.href='/prospects'"
-                            class="nav-link"
+                            class="nav-link active"
                         >
                             <div>
                                 <img
@@ -74,7 +75,7 @@
                         </li>
                         <li
                             onclick="window.location.href='/branch'"
-                            class="nav-link active"
+                            class="nav-link"
                         >
                             <div>
                                 <img
@@ -181,7 +182,7 @@
                         class="branches-bulk-upload"
                     >
                         <div class="header">
-                            <h1>Create a new Branch</h1>
+                            <h1>Create a new Propect</h1>
                         </div>
                         <div class="bulk-upload">
                             <div class="bulk-top">
@@ -213,8 +214,8 @@
                                 <h3>Fill Branch Information</h3>
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label for="branch-name"
-                                            >Branch Name</label
+                                        <label for="first-name"
+                                            >First Name</label
                                         >
                                         <input
                                             type="text"
@@ -223,72 +224,150 @@
                                         />
                                     </div>
                                     <div class="form-group">
-                                        <label for="address">Address</label>
+                                        <label for="last-name">Last-name</label>
                                         <input
                                             type="text"
-                                            id="address"
-                                            name="address"
+                                            id="last-name"
+                                            name="last-name"
                                         />
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label for="branch-code"
-                                            >Branch Code</label
+                                        <label for="product-interest"
+                                            >Product Interest</label
+                                        >
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="product-interest"
+                                                name="product-interest"
+                                                class="product-interest"
+                                            />
+                                            <img
+                                                src="/branch/assets/down.svg"
+                                                alt="down arrow icon"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input
+                                            type="text"
+                                            id="email"
+                                            name="email"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input
+                                            type="text"
+                                            id="phone"
+                                            name="phone"
+                                            class="phone"
+                                        />
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="state">State</label>
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id="state"
+                                                    name="state"
+                                                    class="state"
+                                                />
+                                                <img
+                                                    src="/branch/assets/down.svg"
+                                                    alt="down arrow icon"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="city">City</label>
+
+                                            <input
+                                                type="text"
+                                                id="city"
+                                                name="city"
+                                                class="city"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="occupation"
+                                            >Occupation</label
                                         >
                                         <input
                                             type="text"
-                                            id="branch-code"
-                                            name="branch-code"
+                                            id="occupation"
+                                            name="occupation"
+                                            class="occupation"
                                         />
                                     </div>
-                                    <div class="form-group">
-                                        <label for="state">State</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="state"
-                                                name="state"
-                                                class="state"
-                                            />
-                                            <img
-                                                src="/branch/assets/down.svg"
-                                                alt="down arrow icon"
-                                            />
+                                    <div class="form-row gender-container">
+                                        <p>Gender</p>
+                                        <div class="gender">
+                                            <section>
+                                                <input
+                                                    type="radio"
+                                                    id="male"
+                                                    name="male"
+                                                    value="male"
+                                                    checked
+                                                />
+                                                <label for="male">Male</label>
+                                            </section>
+                                            <section>
+                                                <input
+                                                    type="radio"
+                                                    id="female"
+                                                    name="female"
+                                                    value="female"
+                                                />
+                                                <label for="female"
+                                                    >Female</label
+                                                >
+                                            </section>
                                         </div>
+                                        <div></div>
                                     </div>
                                 </div>
                                 <div class="form-row">
+                                    <div></div>
                                     <div class="form-group">
-                                        <label for="lga">LGA</label>
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="lga"
-                                                name="lga"
-                                                class="lga"
-                                            />
-                                            <img
-                                                src="/branch/assets/down.svg"
-                                                alt="down arrow icon"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button id="openModalBtn">Create Branch</button>
-                                        
+                                        <button id="openModalBtn">
+                                            Create Prospect
+                                        </button>
                                     </div>
 
-                                    <div id="myModal" class="modal" style="display: none;">
+                                    <div
+                                        id="myModal"
+                                        class="modal"
+                                        style="display: none"
+                                    >
                                         <div class="modal-content">
-                                            <h2>Branch has been created <br> successfully</h2>
+                                            <h2>
+                                                Prospect has been created <br />
+                                                successfully
+                                            </h2>
                                             <div class="modal-image">
-                                                <img src="/branch/assets/lf20_od54tgs3.json].svg">
+                                                <img
+                                                    src="/branch/assets/lf20_od54tgs3.json].svg"
+                                                />
                                             </div>
-                                            <button id="closeModalBtn" class="close-btn">Close</button>
+                                            <button
+                                                id="closeModalBtn"
+                                                class="close-btn"
+                                            >
+                                                Close
+                                            </button>
                                         </div>
                                     </div>
-                            
                                 </div>
                             </form>
                         </div>
@@ -334,8 +413,6 @@
                                 <button type="button" id="butn">
                                     Download excel template
                                 </button>
-
-                                
                             </div>
                         </div>
                     </section>

@@ -60,17 +60,16 @@ body {
         display: flex;
         flex-direction: column;
         /* gap: 10rem; */
-  
-         h1{
+
+        h1 {
           font-size: 1.9rem;
 
-          span{
+          span {
             color: var(--primary-color);
           }
-         }
+        }
 
-
-        .otp-group{
+        .otp-group {
           display: flex;
           justify-content: space-between;
           padding-top: 1rem;
@@ -84,7 +83,6 @@ body {
             margin-bottom: 16rem;
           }
         }
-        
 
         .login-btn {
           background-color: var(--primary-color);
@@ -93,9 +91,9 @@ body {
           border: none;
           color: var(--white);
           font-size: 1.6rem;
-          opacity: .2;
+          opacity: 0.2;
 
-          a{
+          a {
             text-decoration: none;
             color: var(--white);
           }

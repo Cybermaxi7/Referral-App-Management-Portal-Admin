@@ -208,6 +208,9 @@ img {
 .navigation {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .navigation ul {
     display: flex;
@@ -244,42 +247,9 @@ img {
     line-height: 2.4rem;
 }
 
-div.chat-body {
-    position: relative;
 
-    .badge {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        font-weight: 800;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: red;
-        position: absolute;
-        top: -20px;
-        right: 0;
-    }
-
-    .chat-button {
-        padding: 15px 30px;
-        background-color: rgba(255, 255, 255, 0.3);
-        /* color: black; */
-        border-radius: 10px;
-        margin-bottom: 5rem;
-        display: flex;
-        gap: 1rem;
-
-        img {
-            width: 20px;
-        }
-
-        span {
-            color: white;
-            font-size: 12px;
-        }
-    }
+main {
+    width: 100%;
 }
 /* Main content area styling */
 .main-content {
@@ -384,18 +354,6 @@ div.chat-body {
     }
 }
 
-/* Ensure sidebar and top-nav adjust on mobile */
-@media screen and (min-width: 992px) {
-    .main-content {
-        margin-left: 29.4rem; /* Offset by the width of the sidebar */
-    }
-
-    .top-nav {
-        left: 29.4rem; /* Offset by the width of the sidebar */
-        width: calc(100% - 29.4rem); /* Full width minus sidebar width */
-    }
-}
-
 /* Hamburger menu styling */
 .hamburger-menu {
     display: none; /* Hidden by default */
@@ -430,5 +388,16 @@ div.chat-body {
     }
     .nav-search-sidebar {
         display: flex !important;
+    }
+}
+/* Ensure sidebar and top-nav adjust on mobile */
+@media screen and (min-width: 991px) {
+    .main-content {
+        margin-left: 29.4rem; /* Offset by the width of the sidebar */
+    }
+
+    .top-nav {
+        left: 29.4rem; /* Offset by the width of the sidebar */
+        width: calc(100% - 29.4rem); /* Full width minus sidebar width */
     }
 }
