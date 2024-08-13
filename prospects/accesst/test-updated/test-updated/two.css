@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prospect-details {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.prospect-info {
+    flex: 1;
+}
+
+.chat-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #f4f4f9;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: white;
+    border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status.ongoing {
+    background-color: #ffc107;
+    color: white;
+}
+
+.time {
+    float: right;
+    color: #888;
+}
+
+.view-button {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}

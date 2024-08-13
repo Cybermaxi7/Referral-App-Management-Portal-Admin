@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <button class="back-button">Back To Prospects</button>
+        </div>
+        <div class="chat-wrapper">
+            <div class="sidebar">
+                <h2>Nurudeen Ibrahim</h2>
+                <div class="tabs">
+                    <button id="activity-tab" class="tab active">Activity</button>
+                    <button id="chats-tab" class="tab">Chats</button>
+                </div>
+            </div>
+            <div class="chat-area">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message from-them">
+                        <p>The prospect would like a customised product.</p>
+                    </div>
+                    <div class="message from-them">
+                        <p>I've scheduled a meeting for 4pm with the prospect.</p>
+                    </div>
+                    <div class="message from-me">
+                        <p>Let's schedule a meeting with the prospect.</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Say Something...">
+                    <button class="emoji-button">😊</button>
+                    <button class="voice-button">🎤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

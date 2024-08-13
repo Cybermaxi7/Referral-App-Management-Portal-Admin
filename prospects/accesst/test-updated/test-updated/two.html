@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prospect Details</title>
+    <link rel="stylesheet" href="two.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prospects</h1>
+            <button class="back-button">Back To Prospects</button>
+        </div>
+        <div class="prospect-details">
+            <img src="profile-image.jpg" alt="Profile Image" class="profile-image">
+            <div class="prospect-info">
+                <p><strong>Name:</strong> Nurudeen Ibrahim</p>
+                <p><strong>Sales Manager:</strong> Seyi Olanrewaju</p>
+                <p><strong>Product Interest:</strong> Auto Insurance</p>
+                <p><strong>Date Added:</strong> 04 Jan 2023</p>
+                <p><strong>Phone Number:</strong> 08165432616</p>
+                <p><strong>Email Address:</strong> theoden@gmail.com</p>
+                <p><strong>Branch:</strong> Lagos Branch</p>
+                <p><strong>Status:</strong> <span class="status ongoing">Ongoing</span></p>
+            </div>
+            <button class="chat-button">Start a Chat</button>
+        </div>
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('activity')">Activity</button>
+            <button class="tab" onclick="showTab('chats')">Chats</button>
+        </div>
+        <div id="activity" class="tab-content">
+            <h2>Activity Summary Today</h2>
+            <ul>
+                <li>Seyi Olanrewaju scheduled a meeting with the prospects <span class="time">9:25 am</span></li>
+                <li>Seyi Olanrewaju replied to your chat <span class="time">9:26 am</span> <button class="view-button">View</button></li>
+                <li>Prospect would like to change product <span class="time">9:30 am</span></li>
+                <li>Prospect would like a customized plan <span class="time">9:35 am</span></li>
+            </ul>
+        </div>
+        <div id="chats" class="tab-content" style="display: none;">
+            <!-- Chats content goes here -->
+        </div>
+    </div>
+    <script src="two.js"></script>
+</body>
+</html>
