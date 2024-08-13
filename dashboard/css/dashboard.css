@@ -312,14 +312,14 @@
 /* Modal container */
 .modal {
   display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  z-index: 10;
+  right: -30rem;
+  bottom: 15rem;
+  width: 33rem;
+  height: fit-content;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 /* Modal content */
@@ -387,6 +387,47 @@
 #sendMessageButton:hover {
   background-color: #218838;
 }
+
+.chat-body {
+  position: relative;
+  margin: 2rem;
+  margin-top: auto;
+  margin-bottom: 10rem;
+
+}
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.chat-button {
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* color: black; */
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+.chat-body img {
+  width: 20px;
+}
+
+span {
+  color: white;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 991px) {
   .dashboard-cards {
     grid-template-columns: 1fr 1fr;
