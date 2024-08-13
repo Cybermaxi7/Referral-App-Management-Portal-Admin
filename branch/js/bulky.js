@@ -45,10 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const createBranch = document.getElementById("myCancel");
+    const createBranch2 = document.getElementById("myCancel2");
     const redirectTo = "/branch/index.html"; // Specify the page to redirect to
 
-    createBranch.addEventListener("click", () => {
-        window.location.href = redirectTo;
+    if(createBranch) {
+        createBranch.addEventListener("click", () => {
+            window.location.href = redirectTo;
+        });
+    }
+    createBranch2.addEventListener("click", () => {
+        window.location.href = "/prospects/index.html"
     });
 });
 
